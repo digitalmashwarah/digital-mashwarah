@@ -41,9 +41,19 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-[hsl(218,65%,32%)] hover:text-[hsl(213,84%,55%)] transition-colors cursor-pointer">
-              Digital Mashwarah
-            </h1>
+            <a 
+              href="#home" 
+              onClick={() => handleNavClick("#home")}
+              className="block"
+            >
+              <h1 className={`text-2xl font-bold transition-all duration-300 cursor-pointer max-h-[50px] leading-tight ${
+                isScrolled 
+                  ? 'text-[hsl(218,65%,32%)] hover:text-[hsl(213,84%,55%)]' 
+                  : 'text-white hover:text-gray-200'
+              }`}>
+                Digital Mashwarah
+              </h1>
+            </a>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -68,6 +78,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={isScrolled ? 'text-gray-700' : 'text-white'}
             >
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
