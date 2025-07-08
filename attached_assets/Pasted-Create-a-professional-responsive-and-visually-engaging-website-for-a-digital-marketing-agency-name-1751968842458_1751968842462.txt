@@ -1,0 +1,65 @@
+Create a professional, responsive, and visually engaging website for a digital marketing agency named **Digital Mashwarah**. Use a modern blue color theme that matches the attached logo (include logo on top left of navbar). The design should feel corporate, clean, and slightly animated using moving elements (like fade-ins, slide-ins, or hover effects). 
+
+Add basic content protection so that visitors:
+- Cannot right-click
+- Cannot copy/paste any text
+- Cannot take screenshots (by disabling common print screen keys and tools)
+
+Include the following pages/sections:
+
+1. **Home**
+   - Hero section with bold tagline: “Grow Your Business with Digital Mashwarah”
+   - Call-to-action button: “Get Free Consultation”
+   - Brief intro about the agency
+   - Services preview
+   - Animated counters: Clients Served, Campaigns Completed, ROI %
+
+2. **About Us**
+   - Company background
+   - Mission & Vision
+   - Team section with image cards and short bios
+
+3. **Services** (with icons and brief animations)
+   - Social Media Marketing
+   - Search Engine Optimization (SEO)
+   - Google Ads (PPC)
+   - Web Design & Development
+   - Content Marketing
+   - Email Marketing
+   - Video Production
+   - Branding & Graphic Design
+   - Influencer Marketing
+   - Analytics & Reporting
+
+4. **Portfolio / Case Studies**
+   - Show recent success stories with before-after stats
+   - Interactive slider or grid gallery
+
+5. **Testimonials**
+   - Rotating carousel of client feedback
+
+6. **Blog**
+   - Latest posts, categories, read more buttons
+
+7. **Contact**
+   - Contact form (Name, Email, Phone, Message)
+   - Google Maps embed
+   - Social media icons
+   - WhatsApp chat button
+
+General Requirements:
+- Clean modern fonts (like Poppins or Open Sans)
+- Responsive design for mobile and desktop
+- Add light hover and scroll animations
+- Use matching blue shades from logo for CTA buttons and sections
+- Add "Request Proposal" sticky button at bottom right
+
+Footer:
+- Quick Links, Services, Contact Info
+- Newsletter subscription form
+- Copyright © 2025 Digital Mashwarah
+
+Content Protection Features:
+- Disable right-click
+- Disable keyboard shortcuts for copy/cut/paste
+- Disable PrintScreen and screen capturing using JavaScript (as much as possible)
