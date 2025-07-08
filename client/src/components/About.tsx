@@ -19,7 +19,7 @@ export default function About() {
     {
       name: "Emily Rodriguez",
       role: "Data Analyst",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b68ac5b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
       bio: "Analytics expert focused on performance optimization and ROI maximization.",
       specialty: "Data Analytics & Performance Optimization"
     }
