@@ -166,12 +166,8 @@
     @apply transition-all duration-300 transform hover:scale-105;
   }
 
-  .team-card:hover .team-overlay {
-    @apply opacity-100;
-  }
-
-  .team-overlay {
-    @apply opacity-0 transition-opacity duration-300;
+  .team-spacing {
+    @apply mb-16;
   }
 
   .modal-overlay {

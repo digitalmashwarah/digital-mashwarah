@@ -67,8 +67,8 @@ export default function About() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="text-center team-card relative overflow-hidden">
-              <CardContent className="p-6">
+            <Card key={member.name} className="text-center team-card relative overflow-hidden group">
+              <CardContent className="p-6 relative">
                 <img 
                   src={member.image} 
                   alt={member.name}
@@ -76,10 +76,10 @@ export default function About() {
                 />
                 <h4 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-2">{member.name}</h4>
                 <p className="text-gray-500 mb-4">{member.role}</p>
-                <p className="text-gray-600 text-sm">{member.bio}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                 
                 {/* Hover Overlay */}
-                <div className="team-overlay absolute inset-0 bg-[hsl(218,65%,32%)]/95 flex items-center justify-center">
+                <div className="absolute inset-0 bg-[hsl(218,65%,32%)]/95 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="text-white text-center px-4">
                     <div className="text-lg font-semibold mb-2">Specialty</div>
                     <div className="text-sm">{member.specialty}</div>
