@@ -1,0 +1,55 @@
+Upgrade my existing digital marketing agency website "Digital Mashwarah" with the following professional improvements. The current website already has a blue theme, moving elements, service sections, testimonials, team, blog, and contact.
+
+Now add these advanced improvements:
+
+1. **Sticky Navigation Bar:**
+   - Make the top navbar sticky with a white background on scroll and soft shadow.
+   - Add smooth scrolling behavior for internal links.
+
+2. **Hero Section Upgrade:**
+   - Add animated gradient background or subtle particle animation.
+   - Optional: Add a short video background loop related to digital marketing.
+   - Show logos of trusted platforms (e.g. Google, Meta, Instagram) below CTA button.
+
+3. **Team Section Enhancement:**
+   - Add hover effect to show short quotes or specialties of each team member (do not add LinkedIn icons).
+
+4. **Portfolio Section Improvement:**
+   - Make each portfolio card clickable.
+   - On click, open a modal showing: client name, challenge, solution, tools used, and result.
+   - Add client logos under the portfolio grid.
+
+5. **Industries We Serve Section:**
+   - New section below services showing key industries we work with:
+     - Real Estate
+     - E-Commerce
+     - Healthcare
+     - Education
+     - Food & Restaurants
+   - Each with an icon and 1-line description.
+
+6. **Lead Magnet Popup (Email Capture):**
+   - Add a scroll or exit-intent popup:
+     - Heading: "Free Guide: Top 10 Digital Marketing Strategies for 2025"
+     - Subheading: "Enter your email to get instant access"
+     - Fields: Email + Download Now button
+   - Add email submissions to a file or send to inbox.
+
+7. **Advanced Content Protection:**
+   - Prevent right-click, copy, print screen (via JS).
+   - Prevent blog text selection and copying.
+   - Optional watermark overlay on portfolio images.
+
+8. **SEO and Analytics Enhancements:**
+   - Add meta title and description to each page.
+   - Add Open Graph and Twitter meta tags for social sharing.
+   - Add Google Analytics (or Plausible) code.
+   - Use schema markup for services and blog.
+
+9. **Mobile Optimization:**
+   - Compress images for faster load.
+   - Reduce spacing on mobile for hero and team sections.
+   - Adjust size of floating WhatsApp button for mobile view.
+
+Final Output:
+The updated website should maintain the current design theme (blue) and feel, but look more premium, lead-generating, mobile-optimized, and content-protected.

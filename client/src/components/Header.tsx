@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPath from "@assets/Digitalmashwarah logo_1751971220696.jpg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { href: "#home", label: "Home" },
@@ -25,7 +35,9 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
+    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'sticky-nav' : 'bg-white/10 backdrop-blur-sm'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -41,7 +53,9 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-gray-700 hover:text-[hsl(218,65%,32%)] transition-colors"
+                className={`${
+                  isScrolled ? 'text-gray-700 hover:text-[hsl(218,65%,32%)]' : 'text-white hover:text-[hsl(213,90%,69%)]'
+                } transition-colors`}
               >
                 {item.label}
               </button>
@@ -65,7 +79,7 @@ export default function Header() {
       
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg">
           <div className="px-4 py-2 space-y-2">
             {navItems.map((item) => (
               <button

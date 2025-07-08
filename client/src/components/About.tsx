@@ -6,24 +6,27 @@ export default function About() {
       name: "Sarah Johnson",
       role: "Marketing Director",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      bio: "Expert in digital strategy with 8+ years of experience in driving brand growth."
+      bio: "Expert in digital strategy with 8+ years of experience in driving brand growth.",
+      specialty: "Strategic Planning & Growth Hacking"
     },
     {
       name: "Michael Chen",
       role: "Creative Director",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      bio: "Creative visionary specializing in brand identity and visual storytelling."
+      bio: "Creative visionary specializing in brand identity and visual storytelling.",
+      specialty: "Brand Design & Visual Identity"
     },
     {
       name: "Emily Rodriguez",
       role: "Data Analyst",
       image: "https://images.unsplash.com/photo-1494790108755-2616b68ac5b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      bio: "Analytics expert focused on performance optimization and ROI maximization."
+      bio: "Analytics expert focused on performance optimization and ROI maximization.",
+      specialty: "Data Analytics & Performance Optimization"
     }
   ];
 
   return (
-    <section id="about" className="py-20 digital-light-bg">
+    <section id="about" className="py-20 digital-light-bg team-spacing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold gradient-text mb-4">About Digital Mashwarah</h2>
@@ -64,7 +67,7 @@ export default function About() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="text-center hover:shadow-xl transition-shadow">
+            <Card key={member.name} className="text-center team-card relative overflow-hidden">
               <CardContent className="p-6">
                 <img 
                   src={member.image} 
@@ -74,6 +77,14 @@ export default function About() {
                 <h4 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-2">{member.name}</h4>
                 <p className="text-gray-500 mb-4">{member.role}</p>
                 <p className="text-gray-600 text-sm">{member.bio}</p>
+                
+                {/* Hover Overlay */}
+                <div className="team-overlay absolute inset-0 bg-[hsl(218,65%,32%)]/95 flex items-center justify-center">
+                  <div className="text-white text-center px-4">
+                    <div className="text-lg font-semibold mb-2">Specialty</div>
+                    <div className="text-sm">{member.specialty}</div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}

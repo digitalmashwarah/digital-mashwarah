@@ -1,12 +1,39 @@
 import { Button } from "@/components/ui/button";
 import { ChartBar, Users, Megaphone } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
+  const particlesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const createParticle = () => {
+      if (!particlesRef.current) return;
+      
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 6 + 's';
+      particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      
+      particlesRef.current.appendChild(particle);
+      
+      setTimeout(() => {
+        particle.remove();
+      }, 6000);
+    };
+
+    const interval = setInterval(createParticle, 300);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(218,65%,32%)] to-[hsl(213,84%,55%)] hexagon-pattern"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(218,65%,32%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)] hexagon-pattern overflow-hidden"
     >
+      {/* Animated Particles */}
+      <div ref={particlesRef} className="particles" />
+      
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="floating-element top-1/5 left-1/10" style={{ animationDelay: '0s' }} />
@@ -14,7 +41,7 @@ export default function Hero() {
         <div className="floating-element top-2/5 right-1/10" style={{ animationDelay: '4s' }} />
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 hero-spacing">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -26,9 +53,20 @@ export default function Hero() {
               We help businesses achieve remarkable growth through innovative strategies 
               and cutting-edge technology.
             </p>
-            <Button className="digital-accent px-8 py-4 rounded-full text-lg font-semibold">
+            <Button className="digital-accent px-8 py-4 rounded-full text-lg font-semibold mb-8">
               Get Free Consultation
             </Button>
+            
+            {/* Trusted Platform Logos */}
+            <div className="flex items-center justify-center space-x-8 opacity-80">
+              <div className="text-white/80 text-sm">Trusted by:</div>
+              <div className="flex items-center space-x-6">
+                <div className="text-white font-bold text-lg">Google</div>
+                <div className="text-white font-bold text-lg">Meta</div>
+                <div className="text-white font-bold text-lg">Instagram</div>
+                <div className="text-white font-bold text-lg">LinkedIn</div>
+              </div>
+            </div>
           </div>
           
           <div className="relative animate-slide-up">

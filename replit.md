@@ -116,6 +116,17 @@ Digital Mashwarah is a professional digital marketing agency website built with 
 
 Changelog:
 - July 08, 2025. Initial setup
+- July 08, 2025. Major upgrade with premium features:
+  - Added sticky navigation with scroll effects
+  - Enhanced hero section with animated particles and platform logos
+  - Improved team section with hover overlays showing specialties
+  - Added Industries We Serve section (Real Estate, E-Commerce, Healthcare, Education, Food & Restaurants)
+  - Enhanced portfolio with clickable modals showing detailed case studies
+  - Added client logos section under portfolio
+  - Implemented lead magnet popup for email capture (appears after 30s or 50% scroll)
+  - Enhanced content protection with advanced features
+  - Added SEO meta tags, Open Graph, and Schema markup
+  - Mobile optimization for spacing and floating buttons
 
 ## User Preferences
 
