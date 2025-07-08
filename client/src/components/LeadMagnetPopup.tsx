@@ -38,22 +38,19 @@ export default function LeadMagnetPopup() {
   });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 30000); // Show after 30 seconds
+    // Check if popup was already closed in this session
+    if (localStorage.getItem("popupClosed")) {
+      return;
+    }
 
-    const handleScroll = () => {
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercentage > 50) {
+    const timer = setTimeout(() => {
+      if (!localStorage.getItem("popupClosed")) {
         setIsVisible(true);
       }
-    };
+    }, 10000); // Show after 10 seconds
 
-    window.addEventListener('scroll', handleScroll);
-    
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -64,14 +61,15 @@ export default function LeadMagnetPopup() {
     }
   };
 
-  const handleClose = () => {
+  const closePopup = () => {
     setIsVisible(false);
+    localStorage.setItem("popupClosed", "true");
   };
 
   if (!isVisible) return null;
 
   return (
-    <div className="popup-overlay" onClick={handleClose}>
+    <div className="popup-overlay animate-in fade-in duration-300" onClick={closePopup}>
       <Card className="max-w-md w-full mx-4" onClick={(e) => e.stopPropagation()}>
         <CardContent className="p-0">
           <div className="relative bg-gradient-to-r from-[hsl(218,65%,32%)] to-[hsl(213,84%,55%)] p-8 text-white text-center">
@@ -79,7 +77,7 @@ export default function LeadMagnetPopup() {
               variant="ghost"
               size="icon"
               className="absolute top-4 right-4 text-white hover:bg-white/20"
-              onClick={handleClose}
+              onClick={closePopup}
             >
               <X className="h-4 w-4" />
             </Button>
