@@ -1,12 +1,46 @@
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Linkedin, Instagram, Send } from "lucide-react";
 import logoPath from "@assets/Digitalmashwarah logo_1751971220696.jpg";
+import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const { toast } = useToast();
+
+  const newsletterMutation = useMutation({
+    mutationFn: (data: { email: string }) => 
+      apiRequest('/api/newsletter', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }),
+    onSuccess: () => {
+      toast({
+        title: "Subscribed!",
+        description: "Thank you for subscribing to our newsletter.",
+      });
+      setEmail("");
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to subscribe. You may already be subscribed.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle newsletter subscription
+    if (email) {
+      newsletterMutation.mutate({ email });
+    }
   };
 
   return (
@@ -67,9 +101,16 @@ export default function Footer() {
               <Input
                 type="email"
                 placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 bg-gray-800 border-gray-700 text-white"
+                required
               />
-              <Button type="submit" className="digital-accent ml-2">
+              <Button 
+                type="submit" 
+                className="digital-accent ml-2"
+                disabled={newsletterMutation.isPending}
+              >
                 <Send className="h-4 w-4" />
               </Button>
             </form>

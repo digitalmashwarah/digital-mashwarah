@@ -3,11 +3,39 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { X, Download } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function LeadMagnetPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { toast } = useToast();
+
+  const leadMagnetMutation = useMutation({
+    mutationFn: (data: { email: string }) => 
+      apiRequest('/api/lead-magnet', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }),
+    onSuccess: () => {
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 3000);
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to process request. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,12 +60,7 @@ export default function LeadMagnetPopup() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Handle email submission (could be sent to backend)
-      console.log('Email submitted:', email);
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsVisible(false);
-      }, 3000);
+      leadMagnetMutation.mutate({ email });
     }
   };
 
@@ -78,9 +101,13 @@ export default function LeadMagnetPopup() {
                   required
                   className="w-full"
                 />
-                <Button type="submit" className="w-full digital-primary">
+                <Button 
+                  type="submit" 
+                  className="w-full digital-primary"
+                  disabled={leadMagnetMutation.isPending}
+                >
                   <Download className="h-4 w-4 mr-2" />
-                  Download Now
+                  {leadMagnetMutation.isPending ? "Processing..." : "Download Now"}
                 </Button>
               </form>
             ) : (

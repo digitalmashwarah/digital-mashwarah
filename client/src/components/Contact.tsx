@@ -5,6 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,11 +16,36 @@ export default function Contact() {
     phone: "",
     message: ""
   });
+  const { toast } = useToast();
+
+  const contactMutation = useMutation({
+    mutationFn: (data: typeof formData) => 
+      apiRequest('/api/contacts', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }),
+    onSuccess: () => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    contactMutation.mutate(formData);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -91,8 +119,12 @@ export default function Contact() {
                 />
               </div>
               
-              <Button type="submit" className="w-full digital-primary">
-                Send Message
+              <Button 
+                type="submit" 
+                className="w-full digital-primary"
+                disabled={contactMutation.isPending}
+              >
+                {contactMutation.isPending ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
