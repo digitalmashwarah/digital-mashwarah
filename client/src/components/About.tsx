@@ -74,7 +74,8 @@ export default function About() {
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover object-center ring-4 ring-blue-100"
+                  className="w-40 h-40 rounded-full mx-auto mb-4 object-cover object-center ring-4 ring-blue-100"
+                  style={{ imageRendering: 'crisp-edges' }}
                 />
                 <h4 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-2">{member.name}</h4>
                 <p className="text-gray-500 mb-4">{member.role}</p>

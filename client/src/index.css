@@ -166,6 +166,13 @@
     @apply transition-all duration-300 transform hover:scale-105;
   }
 
+  .team-card img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: optimize-contrast;
+    filter: contrast(1.1) brightness(1.05) sharpen(0.2);
+  }
+
   .team-spacing {
     @apply mb-16;
   }
