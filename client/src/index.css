@@ -173,6 +173,14 @@
     filter: contrast(1.1) brightness(1.05) sharpen(0.2);
   }
 
+  .team-card img[src*="ChatGPT"] {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    filter: contrast(1.2) brightness(1.1) saturate(1.1);
+    transform: scale(1.02);
+  }
+
   .team-spacing {
     @apply mb-16;
   }

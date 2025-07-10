@@ -75,7 +75,10 @@ export default function About() {
                   src={member.image} 
                   alt={member.name}
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover object-center ring-4 ring-blue-100"
-                  style={{ imageRendering: 'crisp-edges' }}
+                  style={{ 
+                    imageRendering: member.name === 'Aftab Hussain' ? 'pixelated' : 'crisp-edges',
+                    filter: member.name === 'Aftab Hussain' ? 'contrast(1.2) brightness(1.1) saturate(1.1)' : 'none'
+                  }}
                 />
                 <h4 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-2">{member.name}</h4>
                 <p className="text-gray-500 mb-4">{member.role}</p>
