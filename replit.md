@@ -127,6 +127,9 @@ Changelog:
   - Enhanced content protection with advanced features
   - Added SEO meta tags, Open Graph, and Schema markup
   - Mobile optimization for spacing and floating buttons
+- July 10, 2025. Recent improvements:
+  - Removed Stats section (Clients Served, Campaigns Completed, ROI %) completely from homepage
+  - Fixed mobile responsiveness by hiding analytics animation on small screens to prevent overlap with SEO & SEM section
 
 ## User Preferences
 

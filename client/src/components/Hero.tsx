@@ -62,8 +62,8 @@ export default function Hero() {
           
           <div className="relative animate-slide-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 relative overflow-hidden">
-              {/* Lottie Animation Corner */}
-              <div className="absolute top-4 right-4 w-12 h-12 opacity-30">
+              {/* Lottie Animation Corner - Hidden on small screens */}
+              <div className="absolute top-4 right-4 w-12 h-12 opacity-30 hidden md:block">
                 <div className="analytics-animation">
                   <div className="bar-chart">
                     <div className="bar bar-1"></div>
