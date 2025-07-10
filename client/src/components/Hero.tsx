@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="relative animate-slide-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               {/* Service Icons Section */}
-              <div className="grid grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-3 gap-3 mb-8">
                 <div className="text-center group cursor-pointer">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
                     <Monitor className="w-8 h-8 text-white" />
