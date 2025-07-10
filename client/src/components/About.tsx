@@ -74,7 +74,7 @@ export default function About() {
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover object-center ring-4 ring-blue-100"
                 />
                 <h4 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-2">{member.name}</h4>
                 <p className="text-gray-500 mb-4">{member.role}</p>
