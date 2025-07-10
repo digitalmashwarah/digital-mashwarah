@@ -57,22 +57,13 @@ export default function Hero() {
               Get Free Consultation
             </Button>
             
-            {/* Trusted Platform Logos */}
-            <div className="flex items-center justify-center space-x-8 opacity-80">
-              <div className="text-white/80 text-sm">Trusted by:</div>
-              <div className="flex items-center space-x-6">
-                <div className="text-white font-bold text-lg">Google</div>
-                <div className="text-white font-bold text-lg">Meta</div>
-                <div className="text-white font-bold text-lg">Instagram</div>
-                <div className="text-white font-bold text-lg">LinkedIn</div>
-              </div>
-            </div>
+
           </div>
           
           <div className="relative animate-slide-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               {/* Service Icons Section */}
-              <div className="grid grid-cols-3 gap-3 mb-8">
+              <div className="flex justify-between mb-8">
                 <div className="flex flex-col items-center text-center group cursor-pointer service-item-1">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Monitor className="w-8 h-8 text-white" />
