@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChartBar, Users, Megaphone } from "lucide-react";
+import { ChartBar, Users, Megaphone, Monitor, Share2, Search } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 export default function Hero() {
@@ -71,6 +71,31 @@ export default function Hero() {
           
           <div className="relative animate-slide-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              {/* Service Icons Section */}
+              <div className="grid grid-cols-3 gap-6 mb-8">
+                <div className="text-center group cursor-pointer">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                    <Monitor className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight">Web Design & Development</h3>
+                </div>
+                
+                <div className="text-center group cursor-pointer">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                    <Share2 className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight">Social Media Marketing</h3>
+                </div>
+                
+                <div className="text-center group cursor-pointer">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                    <Search className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight">SEO & SEM</h3>
+                </div>
+              </div>
+              
+              {/* Dashboard Mockup */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <div className="h-4 w-24 bg-[hsl(213,90%,69%)] rounded"></div>
