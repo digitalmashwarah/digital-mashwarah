@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChartBar, Users, Megaphone, Monitor, Share2, Search } from "lucide-react";
+import { ChartBar, Users, Megaphone, Monitor, Share2, Search, FileText, Mail, Palette } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 export default function Hero() {
@@ -61,10 +61,23 @@ export default function Hero() {
           </div>
           
           <div className="relative animate-slide-up">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 relative overflow-hidden">
+              {/* Lottie Animation Corner */}
+              <div className="absolute top-4 right-4 w-16 h-16 opacity-30">
+                <div className="analytics-animation">
+                  <div className="bar-chart">
+                    <div className="bar bar-1"></div>
+                    <div className="bar bar-2"></div>
+                    <div className="bar bar-3"></div>
+                    <div className="bar bar-4"></div>
+                  </div>
+                </div>
+              </div>
+              
               {/* Service Icons Section */}
-              <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-y-6 mb-8">
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1 max-w-[200px] mx-auto md:mx-0">
+              <div className="flex flex-wrap justify-center gap-6 mb-8">
+                {/* First Row */}
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1 max-w-[200px] min-w-[150px]">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Monitor className="w-8 h-8 text-white" />
                   </div>
@@ -72,7 +85,7 @@ export default function Hero() {
                   <p className="text-[#e0e0e0] text-sm leading-tight">Modern, responsive websites that convert.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2 max-w-[200px] mx-auto md:mx-0">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2 max-w-[200px] min-w-[150px]">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Share2 className="w-8 h-8 text-white" />
                   </div>
@@ -80,12 +93,50 @@ export default function Hero() {
                   <p className="text-[#e0e0e0] text-sm leading-tight">Engage your audience with impactful content.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 max-w-[200px] mx-auto md:mx-0">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 max-w-[200px] min-w-[150px]">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Search className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-bold text-sm leading-tight mb-1">SEO & SEM</h3>
                   <p className="text-[#e0e0e0] text-sm leading-tight">Boost your rankings and visibility.</p>
+                </div>
+                
+                {/* Second Row */}
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-4 max-w-[200px] min-w-[150px]">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <FileText className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Content Writing</h3>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Compelling copy that drives action.</p>
+                </div>
+                
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-5 max-w-[200px] min-w-[150px]">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Mail className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Email Marketing</h3>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Targeted campaigns that boost sales.</p>
+                </div>
+                
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-6 max-w-[200px] min-w-[150px]">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Palette className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Branding & Logo Design</h3>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Memorable brand identity that stands out.</p>
+                </div>
+              </div>
+              
+              {/* Search Input */}
+              <div className="relative mb-6">
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white/60" />
+                  <input 
+                    type="text" 
+                    placeholder="Search Digital Services..." 
+                    className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl pl-12 pr-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all duration-300"
+                    readOnly
+                  />
                 </div>
               </div>
               

@@ -189,6 +189,60 @@
   .service-item-3 {
     animation: serviceSlideIn 0.8s ease-out 0.6s both;
   }
+
+  .service-item-4 {
+    animation: serviceSlideIn 0.8s ease-out 0.8s both;
+  }
+
+  .service-item-5 {
+    animation: serviceSlideIn 0.8s ease-out 1.0s both;
+  }
+
+  .service-item-6 {
+    animation: serviceSlideIn 0.8s ease-out 1.2s both;
+  }
+
+  .analytics-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 100%;
+  }
+
+  .bar {
+    width: 8px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    border-radius: 2px 2px 0 0;
+    animation: barGrow 2s ease-in-out infinite;
+  }
+
+  .bar-1 {
+    height: 30%;
+    animation-delay: 0s;
+  }
+
+  .bar-2 {
+    height: 60%;
+    animation-delay: 0.3s;
+  }
+
+  .bar-3 {
+    height: 45%;
+    animation-delay: 0.6s;
+  }
+
+  .bar-4 {
+    height: 80%;
+    animation-delay: 0.9s;
+  }
 }
 
 @keyframes fadeIn {
@@ -219,6 +273,17 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes barGrow {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.4);
+    opacity: 0.9;
   }
 }
 
