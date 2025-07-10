@@ -95,10 +95,10 @@ export default function Hero() {
                 
                 <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 transition-all duration-300 hover:scale-105">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Search className="w-6 h-6 md:w-8 md:h-8 text-white" />
+                    <Palette className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">SEO & SEM</h3>
-                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Boost your rankings and visibility.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Branding & Logo Design</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Memorable brand identity that stands out.</p>
                 </div>
                 
                 {/* Second Row */}
@@ -120,10 +120,10 @@ export default function Hero() {
                 
                 <div className="flex flex-col items-center text-center group cursor-pointer service-item-6 transition-all duration-300 hover:scale-105">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Palette className="w-6 h-6 md:w-8 md:h-8 text-white" />
+                    <Search className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Branding & Logo Design</h3>
-                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Memorable brand identity that stands out.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">SEO & SEM</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Boost your rankings and visibility.</p>
                 </div>
               </div>
             </div>
