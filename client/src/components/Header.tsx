@@ -46,9 +46,9 @@ export default function Header() {
               onClick={() => handleNavClick("#home")}
               className="block"
             >
-              <h1 className={`text-2xl font-bold transition-all duration-300 cursor-pointer max-h-[50px] leading-tight ${
+              <h1 className={`text-2xl font-black transition-all duration-300 cursor-pointer max-h-[50px] leading-tight ${
                 isScrolled 
-                  ? 'text-[hsl(218,65%,32%)] hover:text-[hsl(213,84%,55%)]' 
+                  ? 'text-[hsl(218,75%,25%)] hover:text-[hsl(213,84%,55%)]' 
                   : 'text-white hover:text-gray-200'
               }`}>
                 Digital Mashwarah
