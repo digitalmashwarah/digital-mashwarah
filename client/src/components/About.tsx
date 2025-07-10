@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
 import aftabHussainImage from "@assets/ChatGPT Image Jun 21, 2025, 06_53_06 PM_1752146339926.png";
+import digitalMashwarahLogo from "@assets/Digitalmashwarah logo_1752147771011.jpg";
 
 export default function About() {
   const teamMembers = [
@@ -41,9 +42,9 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Modern office workspace" 
-              className="rounded-2xl shadow-lg"
+              src={digitalMashwarahLogo} 
+              alt="Digital Mashwarah Logo" 
+              className="rounded-2xl shadow-lg w-full h-auto"
             />
           </div>
           <div>
