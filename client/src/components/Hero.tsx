@@ -63,8 +63,8 @@ export default function Hero() {
           <div className="relative animate-slide-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               {/* Service Icons Section */}
-              <div className="flex justify-between mb-8">
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1">
+              <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-y-6 mb-8">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1 max-w-[200px] mx-auto md:mx-0">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Monitor className="w-8 h-8 text-white" />
                   </div>
@@ -72,7 +72,7 @@ export default function Hero() {
                   <p className="text-[#e0e0e0] text-sm leading-tight">Modern, responsive websites that convert.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2 max-w-[200px] mx-auto md:mx-0">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Share2 className="w-8 h-8 text-white" />
                   </div>
@@ -80,7 +80,7 @@ export default function Hero() {
                   <p className="text-[#e0e0e0] text-sm leading-tight">Engage your audience with impactful content.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 max-w-[200px] mx-auto md:mx-0">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Search className="w-8 h-8 text-white" />
                   </div>
@@ -131,14 +131,14 @@ export default function Hero() {
             </div>
             
             {/* Trusted By Section */}
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border-t border-white/10">
               <p className="text-white/60 text-sm mb-4">Trusted by leading brands</p>
-              <div className="flex items-center justify-center space-x-8 opacity-70">
-                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Google</div>
-                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Meta</div>
-                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">LinkedIn</div>
-                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Instagram</div>
-                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Twitter</div>
+              <div className="flex items-center justify-center flex-wrap gap-6 opacity-70">
+                <div className="text-white/80 text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Google</div>
+                <div className="text-white/80 text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Meta</div>
+                <div className="text-white/80 text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">LinkedIn</div>
+                <div className="text-white/80 text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Instagram</div>
+                <div className="text-white/80 text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Twitter</div>
               </div>
             </div>
           </div>
