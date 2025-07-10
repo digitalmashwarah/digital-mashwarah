@@ -7,7 +7,7 @@ export default function About() {
       name: "Yasir Aslam",
       role: "CEO",
       image: yasirAslamImage,
-      bio: "Visionary leader with extensive experience in strategic planning, business development, and organizational growth. Leading Digital Mashwarah to new heights of success.",
+      bio: "Visionary leader driving Digital Mashwarah's strategic growth and business development.",
       specialty: "Strategic Leadership & Business Development"
     },
     {
