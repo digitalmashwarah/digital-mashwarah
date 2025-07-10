@@ -1,13 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
+import yasirAslamImage from "@assets/yasir aslam_1752145792975.jpg";
 
 export default function About() {
   const teamMembers = [
     {
-      name: "Sarah Johnson",
-      role: "Marketing Director",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      bio: "Expert in digital strategy with 8+ years of experience in driving brand growth.",
-      specialty: "Strategic Planning & Growth Hacking"
+      name: "Yasir Aslam",
+      role: "CEO",
+      image: yasirAslamImage,
+      bio: "Visionary leader with extensive experience in strategic planning, business development, and organizational growth. Leading Digital Mashwarah to new heights of success.",
+      specialty: "Strategic Leadership & Business Development"
     },
     {
       name: "Michael Chen",
