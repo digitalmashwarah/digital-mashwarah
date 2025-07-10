@@ -61,9 +61,9 @@ export default function Hero() {
           </div>
           
           <div className="relative animate-slide-up">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 relative overflow-hidden">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 relative overflow-hidden">
               {/* Lottie Animation Corner */}
-              <div className="absolute top-4 right-4 w-16 h-16 opacity-30">
+              <div className="absolute top-4 right-4 w-12 h-12 opacity-30">
                 <div className="analytics-animation">
                   <div className="bar-chart">
                     <div className="bar bar-1"></div>
@@ -74,69 +74,56 @@ export default function Hero() {
                 </div>
               </div>
               
-              {/* Service Icons Section */}
-              <div className="flex flex-wrap justify-center gap-6 mb-8">
+              {/* Service Icons Section - 3x2 Grid */}
+              <div className="grid grid-cols-3 gap-4 md:gap-6">
                 {/* First Row */}
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Monitor className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Monitor className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Web Design & Development</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Modern, responsive websites that convert.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Web Design & Development</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Modern, responsive websites that convert.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Share2 className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Share2 className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Social Media Marketing</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Engage your audience with impactful content.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Social Media Marketing</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Engage your audience with impactful content.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Search className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Search className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">SEO & SEM</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Boost your rankings and visibility.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">SEO & SEM</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Boost your rankings and visibility.</p>
                 </div>
                 
                 {/* Second Row */}
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-4 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <FileText className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-4 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <FileText className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Content Writing</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Compelling copy that drives action.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Content Writing</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Compelling copy that drives action.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-5 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Mail className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-5 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Mail className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Email Marketing</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Targeted campaigns that boost sales.</p>
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Email Marketing</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Targeted campaigns that boost sales.</p>
                 </div>
                 
-                <div className="flex flex-col items-center text-center group cursor-pointer service-item-6 max-w-[200px] min-w-[150px]">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
-                    <Palette className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-6 transition-all duration-300 hover:scale-105">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
+                    <Palette className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Branding & Logo Design</h3>
-                  <p className="text-[#e0e0e0] text-sm leading-tight">Memorable brand identity that stands out.</p>
-                </div>
-              </div>
-              
-              {/* Search Input */}
-              <div className="relative mb-6">
-                <div className="relative">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white/60" />
-                  <input 
-                    type="text" 
-                    placeholder="Search Digital Services..." 
-                    className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl pl-12 pr-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all duration-300"
-                    readOnly
-                  />
+                  <h3 className="text-white font-bold text-xs md:text-sm leading-tight mb-1">Branding & Logo Design</h3>
+                  <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Memorable brand identity that stands out.</p>
                 </div>
               </div>
               
