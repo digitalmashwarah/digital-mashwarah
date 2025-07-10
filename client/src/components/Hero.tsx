@@ -127,6 +127,24 @@ export default function Hero() {
                 </div>
               </div>
               
+              {/* Bottom Section with Stats */}
+              <div className="mt-6 pt-4 border-t border-white/10">
+                <div className="flex items-center justify-between text-center">
+                  <div className="flex-1">
+                    <div className="text-white font-bold text-lg md:text-xl">500+</div>
+                    <div className="text-white/60 text-xs md:text-sm">Projects Completed</div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-white font-bold text-lg md:text-xl">98%</div>
+                    <div className="text-white/60 text-xs md:text-sm">Client Satisfaction</div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-white font-bold text-lg md:text-xl">24/7</div>
+                    <div className="text-white/60 text-xs md:text-sm">Support Available</div>
+                  </div>
+                </div>
+              </div>
+              
               {/* Dashboard Mockup */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
