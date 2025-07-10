@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
-import aftabHussainImage from "@assets/ChatGPT Image Jul 10, 2025, 04_45_11 PM_1752147933847.png";
+import aftabHussainImage from "@assets/ChatGPT Image Jul 10, 2025, 04_49_45 PM_1752148197976.png";
 import digitalMashwarahLogo from "@assets/Digitalmashwarah logo_1752147771011.jpg";
 
 export default function About() {
