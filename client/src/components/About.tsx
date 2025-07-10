@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import yasirAslamImage from "@assets/yasir aslam_1752145792975.jpg";
+import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
 import aftabHussainImage from "@assets/ChatGPT Image Jun 21, 2025, 06_53_06 PM_1752146339926.png";
 
 export default function About() {
