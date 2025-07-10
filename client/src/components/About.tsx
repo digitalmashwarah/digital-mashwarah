@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import yasirAslamImage from "@assets/yasir aslam_1752145792975.jpg";
+import aftabHussainImage from "@assets/ChatGPT Image Jun 21, 2025, 06_53_06 PM_1752146339926.png";
 
 export default function About() {
   const teamMembers = [
@@ -11,9 +12,9 @@ export default function About() {
       specialty: "Strategic Leadership & Business Development"
     },
     {
-      name: "Michael Chen",
+      name: "Aftab Hussain",
       role: "Creative Director",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: aftabHussainImage,
       bio: "Creative visionary specializing in brand identity and visual storytelling.",
       specialty: "Brand Design & Visual Identity"
     },
