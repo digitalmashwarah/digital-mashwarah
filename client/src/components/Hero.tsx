@@ -77,21 +77,24 @@ export default function Hero() {
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
                     <Monitor className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight">Web Design & Development</h3>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Web Design & Development</h3>
+                  <p className="text-white/80 text-xs">Modern, responsive websites that convert.</p>
                 </div>
                 
                 <div className="text-center group cursor-pointer">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
                     <Share2 className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight">Social Media Marketing</h3>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">Social Media Marketing</h3>
+                  <p className="text-white/80 text-xs">Engage your audience with impactful content.</p>
                 </div>
                 
                 <div className="text-center group cursor-pointer">
                   <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
                     <Search className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-sm leading-tight">SEO & SEM</h3>
+                  <h3 className="text-white font-bold text-sm leading-tight mb-1">SEO & SEM</h3>
+                  <p className="text-white/80 text-xs">Boost your rankings and visibility.</p>
                 </div>
               </div>
               
