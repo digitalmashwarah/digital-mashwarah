@@ -73,28 +73,28 @@ export default function Hero() {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               {/* Service Icons Section */}
               <div className="grid grid-cols-3 gap-3 mb-8">
-                <div className="text-center group cursor-pointer service-item-1">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-1">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Monitor className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-bold text-sm leading-tight mb-1">Web Design & Development</h3>
-                  <p className="text-white/80 text-xs">Modern, responsive websites that convert.</p>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Modern, responsive websites that convert.</p>
                 </div>
                 
-                <div className="text-center group cursor-pointer service-item-2">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-2">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Share2 className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-bold text-sm leading-tight mb-1">Social Media Marketing</h3>
-                  <p className="text-white/80 text-xs">Engage your audience with impactful content.</p>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Engage your audience with impactful content.</p>
                 </div>
                 
-                <div className="text-center group cursor-pointer service-item-3">
-                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30 group-hover:shadow-lg">
+                <div className="flex flex-col items-center text-center group cursor-pointer service-item-3">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 group-hover:shadow-lg group-hover:shadow-white/20">
                     <Search className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-bold text-sm leading-tight mb-1">SEO & SEM</h3>
-                  <p className="text-white/80 text-xs">Boost your rankings and visibility.</p>
+                  <p className="text-[#e0e0e0] text-sm leading-tight">Boost your rankings and visibility.</p>
                 </div>
               </div>
               
@@ -136,6 +136,18 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            
+            {/* Trusted By Section */}
+            <div className="mt-8 text-center">
+              <p className="text-white/60 text-sm mb-4">Trusted by leading brands</p>
+              <div className="flex items-center justify-center space-x-8 opacity-70">
+                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Google</div>
+                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Meta</div>
+                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">LinkedIn</div>
+                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Instagram</div>
+                <div className="text-white/80 text-lg font-semibold hover:text-white transition-all duration-300 cursor-pointer grayscale hover:grayscale-0">Twitter</div>
               </div>
             </div>
           </div>
