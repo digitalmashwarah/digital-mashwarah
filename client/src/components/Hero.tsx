@@ -48,7 +48,7 @@ export default function Hero() {
               Grow Your Business with{" "}
               <span className="text-[hsl(213,90%,69%)]">Digital Mashwarah</span>
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-white">
               Transform your digital presence with our comprehensive marketing solutions. 
               We help businesses achieve remarkable growth through innovative strategies 
               and cutting-edge technology.
