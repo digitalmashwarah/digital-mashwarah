@@ -131,12 +131,31 @@ export default function Hero() {
             {/* Trusted By Section */}
             <div className="mt-8 text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-t border-white/10">
               <p className="text-white/60 text-sm mb-3 sm:mb-4">Trusted by leading brands</p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:items-center md:justify-center gap-2 sm:gap-4 md:gap-6 opacity-70">
-                <div className="text-white/80 text-sm sm:text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Google</div>
-                <div className="text-white/80 text-sm sm:text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Meta</div>
-                <div className="text-white/80 text-sm sm:text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">LinkedIn</div>
-                <div className="text-white/80 text-sm sm:text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Instagram</div>
-                <div className="text-white/80 text-sm sm:text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer col-span-2 sm:col-span-1">Twitter</div>
+              
+              {/* Mobile: Scrolling ticker */}
+              <div className="sm:hidden overflow-hidden">
+                <div className="animate-scroll-horizontal flex whitespace-nowrap space-x-8">
+                  <div className="text-white/80 text-sm font-semibold">Google</div>
+                  <div className="text-white/80 text-sm font-semibold">Meta</div>
+                  <div className="text-white/80 text-sm font-semibold">LinkedIn</div>
+                  <div className="text-white/80 text-sm font-semibold">Instagram</div>
+                  <div className="text-white/80 text-sm font-semibold">Twitter</div>
+                  {/* Duplicate for seamless loop */}
+                  <div className="text-white/80 text-sm font-semibold">Google</div>
+                  <div className="text-white/80 text-sm font-semibold">Meta</div>
+                  <div className="text-white/80 text-sm font-semibold">LinkedIn</div>
+                  <div className="text-white/80 text-sm font-semibold">Instagram</div>
+                  <div className="text-white/80 text-sm font-semibold">Twitter</div>
+                </div>
+              </div>
+
+              {/* Desktop: Grid layout */}
+              <div className="hidden sm:flex sm:items-center sm:justify-center sm:flex-wrap gap-4 md:gap-6 opacity-70">
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Google</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Meta</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">LinkedIn</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Instagram</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Twitter</div>
               </div>
             </div>
           </div>

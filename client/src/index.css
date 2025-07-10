@@ -339,6 +339,15 @@
   }
 }
 
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Disable text selection globally */
 * {
   -webkit-touch-callout: none;
