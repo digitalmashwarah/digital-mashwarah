@@ -126,64 +126,6 @@ export default function Hero() {
                   <p className="text-[#e0e0e0] text-xs md:text-sm leading-tight">Memorable brand identity that stands out.</p>
                 </div>
               </div>
-              
-              {/* Bottom Section with Stats */}
-              <div className="mt-6 pt-4 border-t border-white/10">
-                <div className="flex items-center justify-between text-center">
-                  <div className="flex-1">
-                    <div className="text-white font-bold text-lg md:text-xl">500+</div>
-                    <div className="text-white/60 text-xs md:text-sm">Projects Completed</div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-white font-bold text-lg md:text-xl">98%</div>
-                    <div className="text-white/60 text-xs md:text-sm">Client Satisfaction</div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-white font-bold text-lg md:text-xl">24/7</div>
-                    <div className="text-white/60 text-xs md:text-sm">Support Available</div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Dashboard Mockup */}
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <div className="h-4 w-24 bg-[hsl(213,90%,69%)] rounded"></div>
-                  <div className="h-4 w-16 bg-blue-300 rounded"></div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-[hsl(213,90%,69%)] rounded-lg flex items-center justify-center">
-                      <ChartBar className="text-[hsl(218,65%,32%)]" />
-                    </div>
-                    <div>
-                      <div className="h-3 w-20 bg-blue-300 rounded mb-2"></div>
-                      <div className="h-2 w-16 bg-blue-200 rounded"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-300 rounded-lg flex items-center justify-center">
-                      <Users className="text-[hsl(218,65%,32%)]" />
-                    </div>
-                    <div>
-                      <div className="h-3 w-24 bg-[hsl(213,90%,69%)] rounded mb-2"></div>
-                      <div className="h-2 w-20 bg-blue-200 rounded"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-200 rounded-lg flex items-center justify-center">
-                      <Megaphone className="text-[hsl(218,65%,32%)]" />
-                    </div>
-                    <div>
-                      <div className="h-3 w-28 bg-blue-300 rounded mb-2"></div>
-                      <div className="h-2 w-24 bg-blue-200 rounded"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             
             {/* Trusted By Section */}
