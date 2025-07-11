@@ -12,7 +12,7 @@ export default function Portfolio() {
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       roi: "+250%",
       duration: "6 months",
-      client: "TechShop Online",
+      client: "Javed Express",
       challenge: "Low conversion rates and poor online visibility despite having quality products.",
       solution: "Implemented comprehensive SEO strategy, redesigned user experience, and launched targeted social media campaigns.",
       tools: ["Google Ads", "Facebook Ads", "SEO Tools", "Analytics", "Email Marketing"],
