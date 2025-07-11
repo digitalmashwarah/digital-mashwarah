@@ -3,7 +3,7 @@ import { MessageCircle, FileText } from "lucide-react";
 
 export default function FloatingButtons() {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/1234567890", "_blank");
+    window.open("https://wa.me/923104090921", "_blank");
   };
 
   const handleProposalClick = () => {

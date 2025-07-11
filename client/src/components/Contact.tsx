@@ -149,7 +149,12 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-[hsl(218,65%,32%)] mb-2">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <a 
+                  href="tel:+923104090921" 
+                  className="text-gray-600 hover:text-[hsl(218,65%,32%)] transition-colors"
+                >
+                  +92 310 4090921
+                </a>
               </div>
             </div>
             
