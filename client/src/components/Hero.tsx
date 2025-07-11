@@ -134,30 +134,30 @@ export default function Hero() {
               
               {/* Mobile: Scrolling ticker */}
               <div className="sm:hidden overflow-hidden">
-                <div className="animate-scroll-horizontal flex whitespace-nowrap space-x-8">
-                  <div className="text-white/80 text-sm font-semibold">Jannat Jewellers</div>
-                  <div className="text-white/80 text-sm font-semibold">Ghani Jewellers</div>
-                  <div className="text-white/80 text-sm font-semibold">Kingg Music</div>
-                  <div className="text-white/80 text-sm font-semibold">Umeed Milap</div>
-                  <div className="text-white/80 text-sm font-semibold">Digital Markaz</div>
-                  <div className="text-white/80 text-sm font-semibold">Miracle Mobiles</div>
-                  <div className="text-white/80 text-sm font-semibold">Style Studio</div>
-                  <div className="text-white/80 text-sm font-semibold">Rishta Markaz</div>
-                  <div className="text-white/80 text-sm font-semibold">Lilium Vogue</div>
-                  <div className="text-white/80 text-sm font-semibold">Digital University</div>
-                  <div className="text-white/80 text-sm font-semibold">Dream Talent</div>
+                <div className="animate-scroll-horizontal flex whitespace-nowrap space-x-8 min-w-max">
+                  <span className="text-white/80 text-sm font-semibold">Jannat Jewellers</span>
+                  <span className="text-white/80 text-sm font-semibold">Ghani Jewellers</span>
+                  <span className="text-white/80 text-sm font-semibold">Kingg Music</span>
+                  <span className="text-white/80 text-sm font-semibold">Umeed Milap</span>
+                  <span className="text-white/80 text-sm font-semibold">Digital Markaz</span>
+                  <span className="text-white/80 text-sm font-semibold">Miracle Mobiles</span>
+                  <span className="text-white/80 text-sm font-semibold">Style Studio</span>
+                  <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
+                  <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
+                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
                   {/* Duplicate for seamless loop */}
-                  <div className="text-white/80 text-sm font-semibold">Jannat Jewellers</div>
-                  <div className="text-white/80 text-sm font-semibold">Ghani Jewellers</div>
-                  <div className="text-white/80 text-sm font-semibold">Kingg Music</div>
-                  <div className="text-white/80 text-sm font-semibold">Umeed Milap</div>
-                  <div className="text-white/80 text-sm font-semibold">Digital Markaz</div>
-                  <div className="text-white/80 text-sm font-semibold">Miracle Mobiles</div>
-                  <div className="text-white/80 text-sm font-semibold">Style Studio</div>
-                  <div className="text-white/80 text-sm font-semibold">Rishta Markaz</div>
-                  <div className="text-white/80 text-sm font-semibold">Lilium Vogue</div>
-                  <div className="text-white/80 text-sm font-semibold">Digital University</div>
-                  <div className="text-white/80 text-sm font-semibold">Dream Talent</div>
+                  <span className="text-white/80 text-sm font-semibold">Jannat Jewellers</span>
+                  <span className="text-white/80 text-sm font-semibold">Ghani Jewellers</span>
+                  <span className="text-white/80 text-sm font-semibold">Kingg Music</span>
+                  <span className="text-white/80 text-sm font-semibold">Umeed Milap</span>
+                  <span className="text-white/80 text-sm font-semibold">Digital Markaz</span>
+                  <span className="text-white/80 text-sm font-semibold">Miracle Mobiles</span>
+                  <span className="text-white/80 text-sm font-semibold">Style Studio</span>
+                  <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
+                  <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
+                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
                 </div>
               </div>
 
