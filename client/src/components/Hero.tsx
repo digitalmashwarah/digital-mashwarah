@@ -144,7 +144,7 @@ export default function Hero() {
                   <span className="text-white/80 text-sm font-semibold">Style Studio</span>
                   <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
                   <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm font-semibold">Tech Startup Launch</span>
                   <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
                   {/* Duplicate for seamless loop */}
                   <span className="text-white/80 text-sm font-semibold">Jannat Jewellers</span>
@@ -156,7 +156,7 @@ export default function Hero() {
                   <span className="text-white/80 text-sm font-semibold">Style Studio</span>
                   <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
                   <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm font-semibold">Tech Startup Launch</span>
                   <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function Hero() {
                 <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Style Studio</div>
                 <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Rishta Markaz</div>
                 <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Lilium Vogue</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Digital University</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Tech Startup Launch</div>
                 <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Dream Talent</div>
               </div>
             </div>
