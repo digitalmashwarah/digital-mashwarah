@@ -117,7 +117,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            Copyright © 2025 Digital Mashwarah. All rights reserved.
+            Copyright © 2018 Digital Mashwarah. All rights reserved.
           </p>
         </div>
       </div>
