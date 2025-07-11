@@ -190,13 +190,6 @@ export default function Contact() {
                 <Instagram className="h-4 w-4" />
               </Button>
             </div>
-            
-            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-                <p className="text-gray-500">Google Maps Integration</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
