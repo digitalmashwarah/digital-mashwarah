@@ -225,6 +225,10 @@
     justify-content: center;
   }
 
+  .animate-scroll-horizontal {
+    animation: scroll-horizontal 30s linear infinite;
+  }
+
   .bar-chart {
     display: flex;
     align-items: flex-end;
