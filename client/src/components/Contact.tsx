@@ -19,14 +19,16 @@ export default function Contact() {
   const { toast } = useToast();
 
   const contactMutation = useMutation({
-    mutationFn: (data: typeof formData) => 
-      apiRequest('/api/contacts', {
+    mutationFn: async (data: typeof formData) => {
+      const response = await apiRequest('/api/contacts', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
           'Content-Type': 'application/json',
         },
-      }),
+      });
+      return response.json();
+    },
     onSuccess: () => {
       toast({
         title: "Message Sent!",
@@ -34,7 +36,8 @@ export default function Contact() {
       });
       setFormData({ name: "", email: "", phone: "", message: "" });
     },
-    onError: () => {
+    onError: (error) => {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
