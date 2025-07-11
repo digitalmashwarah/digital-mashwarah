@@ -135,27 +135,45 @@ export default function Hero() {
               {/* Mobile: Scrolling ticker */}
               <div className="sm:hidden overflow-hidden">
                 <div className="animate-scroll-horizontal flex whitespace-nowrap space-x-8">
-                  <div className="text-white/80 text-sm font-semibold">Google</div>
-                  <div className="text-white/80 text-sm font-semibold">Meta</div>
-                  <div className="text-white/80 text-sm font-semibold">LinkedIn</div>
-                  <div className="text-white/80 text-sm font-semibold">Instagram</div>
-                  <div className="text-white/80 text-sm font-semibold">Twitter</div>
+                  <div className="text-white/80 text-sm font-semibold">Jannat Jewellers</div>
+                  <div className="text-white/80 text-sm font-semibold">Ghani Jewellers</div>
+                  <div className="text-white/80 text-sm font-semibold">Kingg Music</div>
+                  <div className="text-white/80 text-sm font-semibold">Umeed Milap</div>
+                  <div className="text-white/80 text-sm font-semibold">Digital Markaz</div>
+                  <div className="text-white/80 text-sm font-semibold">Miracle Mobiles</div>
+                  <div className="text-white/80 text-sm font-semibold">Style Studio</div>
+                  <div className="text-white/80 text-sm font-semibold">Rishta Markaz</div>
+                  <div className="text-white/80 text-sm font-semibold">Lilium Vogue</div>
+                  <div className="text-white/80 text-sm font-semibold">Digital University</div>
+                  <div className="text-white/80 text-sm font-semibold">Dream Talent</div>
                   {/* Duplicate for seamless loop */}
-                  <div className="text-white/80 text-sm font-semibold">Google</div>
-                  <div className="text-white/80 text-sm font-semibold">Meta</div>
-                  <div className="text-white/80 text-sm font-semibold">LinkedIn</div>
-                  <div className="text-white/80 text-sm font-semibold">Instagram</div>
-                  <div className="text-white/80 text-sm font-semibold">Twitter</div>
+                  <div className="text-white/80 text-sm font-semibold">Jannat Jewellers</div>
+                  <div className="text-white/80 text-sm font-semibold">Ghani Jewellers</div>
+                  <div className="text-white/80 text-sm font-semibold">Kingg Music</div>
+                  <div className="text-white/80 text-sm font-semibold">Umeed Milap</div>
+                  <div className="text-white/80 text-sm font-semibold">Digital Markaz</div>
+                  <div className="text-white/80 text-sm font-semibold">Miracle Mobiles</div>
+                  <div className="text-white/80 text-sm font-semibold">Style Studio</div>
+                  <div className="text-white/80 text-sm font-semibold">Rishta Markaz</div>
+                  <div className="text-white/80 text-sm font-semibold">Lilium Vogue</div>
+                  <div className="text-white/80 text-sm font-semibold">Digital University</div>
+                  <div className="text-white/80 text-sm font-semibold">Dream Talent</div>
                 </div>
               </div>
 
               {/* Desktop: Grid layout */}
               <div className="hidden sm:flex sm:items-center sm:justify-center sm:flex-wrap gap-4 md:gap-6 opacity-70">
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Google</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Meta</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">LinkedIn</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Instagram</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Twitter</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Jannat Jewellers</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Ghani Jewellers</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Kingg Music</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Umeed Milap</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Digital Markaz</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Miracle Mobiles</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Style Studio</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Rishta Markaz</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Lilium Vogue</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Digital University</div>
+                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Dream Talent</div>
               </div>
             </div>
           </div>
