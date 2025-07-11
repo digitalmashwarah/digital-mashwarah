@@ -2,14 +2,14 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Facebook, Instagram, Twitter, Linkedin, Youtube, TrendingUp, Users, MessageSquare, BarChart3, Target, Clock } from "lucide-react";
-import BackToHomeButton from "@/components/BackToHomeButton";
+import BackButton from "@/components/BackToHomeButton";
 
 export default function SocialMediaMarketing() {
   return (
     <Layout>
       <div className="min-h-screen bg-gradient-to-br from-[hsl(218,65%,32%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <BackToHomeButton />
+          <BackButton />
           <div className="text-center mb-16">
             <div className="w-20 h-20 bg-white/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <Facebook className="w-10 h-10 text-white" />
