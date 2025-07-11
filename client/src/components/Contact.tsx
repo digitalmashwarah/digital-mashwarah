@@ -167,7 +167,12 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-[hsl(218,65%,32%)] mb-2">Email</h3>
-                <p className="text-gray-600">info@digitalmashwarah.com</p>
+                <a 
+                  href="mailto:digitalmashwarah@gmail.com" 
+                  className="text-gray-600 hover:text-[hsl(218,65%,32%)] transition-colors"
+                >
+                  digitalmashwarah@gmail.com
+                </a>
               </div>
             </div>
             
