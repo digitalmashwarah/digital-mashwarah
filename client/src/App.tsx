@@ -5,6 +5,16 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
+import SocialMediaMarketing from "@/pages/services/SocialMediaMarketing";
+import SEO from "@/pages/services/SEO";
+import GoogleAds from "@/pages/services/GoogleAds";
+import WebDesign from "@/pages/services/WebDesign";
+import ContentMarketing from "@/pages/services/ContentMarketing";
+import EmailMarketing from "@/pages/services/EmailMarketing";
+import VideoProduction from "@/pages/services/VideoProduction";
+import Branding from "@/pages/services/Branding";
+import InfluencerMarketing from "@/pages/services/InfluencerMarketing";
+import Analytics from "@/pages/services/Analytics";
 import { useEffect } from "react";
 import { initContentProtection } from "@/lib/contentProtection";
 
@@ -12,6 +22,16 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/services/social-media-marketing" component={SocialMediaMarketing} />
+      <Route path="/services/seo" component={SEO} />
+      <Route path="/services/google-ads" component={GoogleAds} />
+      <Route path="/services/web-design" component={WebDesign} />
+      <Route path="/services/content-marketing" component={ContentMarketing} />
+      <Route path="/services/email-marketing" component={EmailMarketing} />
+      <Route path="/services/video-production" component={VideoProduction} />
+      <Route path="/services/branding" component={Branding} />
+      <Route path="/services/influencer-marketing" component={InfluencerMarketing} />
+      <Route path="/services/analytics" component={Analytics} />
       <Route component={NotFound} />
     </Switch>
   );

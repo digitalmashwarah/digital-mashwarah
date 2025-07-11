@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "wouter";
 import { 
   Facebook, 
   Search, 
@@ -17,52 +18,62 @@ export default function Services() {
     {
       icon: <Facebook className="text-2xl" />,
       title: "Social Media Marketing",
-      description: "Build your brand presence across all major social platforms with engaging content and targeted campaigns."
+      description: "Build your brand presence across all major social platforms with engaging content and targeted campaigns.",
+      url: "/services/social-media-marketing"
     },
     {
       icon: <Search className="text-2xl" />,
       title: "Search Engine Optimization",
-      description: "Improve your website's visibility and rankings on search engines to drive organic traffic."
+      description: "Improve your website's visibility and rankings on search engines to drive organic traffic.",
+      url: "/services/seo"
     },
     {
       icon: <Settings className="text-2xl" />,
       title: "Google Ads (PPC)",
-      description: "Maximize your ROI with targeted pay-per-click advertising campaigns on Google and other platforms."
+      description: "Maximize your ROI with targeted pay-per-click advertising campaigns on Google and other platforms.",
+      url: "/services/google-ads"
     },
     {
       icon: <Code className="text-2xl" />,
       title: "Web Design & Development",
-      description: "Create stunning, responsive websites that convert visitors into customers."
+      description: "Create stunning, responsive websites that convert visitors into customers.",
+      url: "/services/web-design"
     },
     {
       icon: <PenTool className="text-2xl" />,
       title: "Content Marketing",
-      description: "Engage your audience with high-quality, valuable content that drives traffic and conversions."
+      description: "Engage your audience with high-quality, valuable content that drives traffic and conversions.",
+      url: "/services/content-marketing"
     },
     {
       icon: <Mail className="text-2xl" />,
       title: "Email Marketing",
-      description: "Build lasting relationships with your customers through personalized email campaigns."
+      description: "Build lasting relationships with your customers through personalized email campaigns.",
+      url: "/services/email-marketing"
     },
     {
       icon: <Video className="text-2xl" />,
       title: "Video Production",
-      description: "Create compelling video content that tells your brand story and engages your audience."
+      description: "Create compelling video content that tells your brand story and engages your audience.",
+      url: "/services/video-production"
     },
     {
       icon: <Palette className="text-2xl" />,
       title: "Branding & Graphic Design",
-      description: "Develop a strong brand identity with professional design that stands out from the competition."
+      description: "Develop a strong brand identity with professional design that stands out from the competition.",
+      url: "/services/branding"
     },
     {
       icon: <Star className="text-2xl" />,
       title: "Influencer Marketing",
-      description: "Connect with your target audience through authentic influencer partnerships and collaborations."
+      description: "Connect with your target audience through authentic influencer partnerships and collaborations.",
+      url: "/services/influencer-marketing"
     },
     {
       icon: <BarChart className="text-2xl" />,
       title: "Analytics & Reporting",
-      description: "Track performance and gain valuable insights with comprehensive analytics and detailed reports."
+      description: "Track performance and gain valuable insights with comprehensive analytics and detailed reports.",
+      url: "/services/analytics"
     }
   ];
 
@@ -78,15 +89,17 @@ export default function Services() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="service-card border-2 border-transparent hover:border-[hsl(218,65%,32%)]">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-[hsl(218,65%,32%)]/10 rounded-lg flex items-center justify-center mb-6 text-[hsl(218,65%,32%)]">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-4">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-            </Card>
+            <Link key={service.title} href={service.url}>
+              <Card className="service-card border-2 border-transparent hover:border-[hsl(218,65%,32%)] cursor-pointer transition-all duration-300 hover:shadow-lg">
+                <CardContent className="p-6">
+                  <div className="w-16 h-16 bg-[hsl(218,65%,32%)]/10 rounded-lg flex items-center justify-center mb-6 text-[hsl(218,65%,32%)]">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-[hsl(218,65%,32%)] mb-4">{service.title}</h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
