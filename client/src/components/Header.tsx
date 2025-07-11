@@ -31,10 +31,16 @@ export default function Header() {
       // Navigate to page
       window.location.href = href;
     } else {
-      // Scroll to section
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+      // Check if we're on home page or need to navigate to home first
+      if (window.location.pathname === '/') {
+        // We're on home page, scroll to section
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // Navigate to home page with hash
+        window.location.href = '/' + href;
       }
     }
     setIsMenuOpen(false);

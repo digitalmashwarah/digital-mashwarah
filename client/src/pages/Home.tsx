@@ -8,8 +8,22 @@ import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import LeadMagnetPopup from "@/components/LeadMagnetPopup";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // Handle hash navigation when coming from other pages
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <Layout>
       <Hero />
