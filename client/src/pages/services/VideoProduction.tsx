@@ -1,141 +1,92 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Video, Camera, Edit3, Play, Film, Mic, CheckCircle, Users, TrendingUp, Clock } from "lucide-react";
-import BackButton from "@/components/BackToHomeButton";
+import BackToHomeButton from "@/components/BackToHomeButton";
+import { CheckCircle, Video, Play, Camera, Film } from "lucide-react";
 
 export default function VideoProduction() {
   return (
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-[hsl(218,65%,32%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <BackButton />
+      <section className="py-20 bg-gradient-to-br from-indigo-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BackToHomeButton />
+          
           <div className="text-center mb-16">
-            <div className="w-20 h-20 bg-white/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-              <Video className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-5xl font-bold text-white mb-6">Video Production</h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Create compelling video content that tells your brand story and engages your audience across all platforms.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Video Production
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Bring your brand to life with compelling video content that captivates and converts
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">Our Video Services</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Corporate Videos</h3>
-                      <p className="text-white/80 text-sm">Professional brand videos and company presentations</p>
-                    </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Visual Stories That Drive Action
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Our video production team creates high-quality, engaging videos that tell your brand story and drive meaningful connections with your audience.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Brand & Corporate Videos",
+                  "Product Demonstrations",
+                  "Social Media Video Content",
+                  "Animated Explainer Videos",
+                  "Video Marketing Campaigns"
+                ].map((service, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-gray-700">{service}</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Product Demonstrations</h3>
-                      <p className="text-white/80 text-sm">Showcase your products in action with detailed walkthroughs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Social Media Content</h3>
-                      <p className="text-white/80 text-sm">Short-form videos optimized for social platforms</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Testimonial Videos</h3>
-                      <p className="text-white/80 text-sm">Customer success stories and reviews</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Educational Content</h3>
-                      <p className="text-white/80 text-sm">Training videos and how-to tutorials</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">Video Impact</h2>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <TrendingUp className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Higher Engagement</h3>
-                    <p className="text-white/80 text-xs">10x more shares</p>
-                  </div>
-                  <div className="text-center">
-                    <Users className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Better Retention</h3>
-                    <p className="text-white/80 text-xs">95% retention rate</p>
-                  </div>
-                  <div className="text-center">
-                    <Play className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Conversion Boost</h3>
-                    <p className="text-white/80 text-xs">80% increase</p>
-                  </div>
-                  <div className="text-center">
-                    <Clock className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Time on Site</h3>
-                    <p className="text-white/80 text-xs">2x longer visits</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-16">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Our Production Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Edit3 className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Pre-Production</h3>
-                <p className="text-white/80 text-sm">Script, storyboard, planning</p>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Camera className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Production</h3>
-                <p className="text-white/80 text-sm">Professional filming</p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Video className="h-10 w-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">High Quality</h3>
+                <p className="text-gray-600">Professional-grade video production with stunning visuals</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Film className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Post-Production</h3>
-                <p className="text-white/80 text-sm">Editing and effects</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Play className="h-10 w-10 text-red-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Engaging Content</h3>
+                <p className="text-gray-600">Videos that capture attention and drive viewer engagement</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Play className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Delivery</h3>
-                <p className="text-white/80 text-sm">Final video delivery</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Camera className="h-10 w-10 text-purple-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Brand Storytelling</h3>
+                <p className="text-gray-600">Compelling narratives that showcase your brand values</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Film className="h-10 w-10 text-indigo-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Multi-Platform</h3>
+                <p className="text-gray-600">Videos optimized for all social media platforms</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Create Amazing Videos?</h2>
-            <p className="text-white/90 text-lg mb-8">Let's bring your vision to life with professional video content that captivates and converts.</p>
-            <Button className="bg-[hsl(213,90%,69%)] hover:bg-[hsl(213,90%,60%)] text-white px-8 py-4 rounded-full text-lg font-semibold">
-              Start Video Project
-            </Button>
+          <div className="text-center mt-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Ready to Create Stunning Videos?
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+              Let's produce video content that tells your story and drives results
+            </p>
+            <a
+              href="https://wa.me/923104090921"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-colors"
+            >
+              Start Your Video Project
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

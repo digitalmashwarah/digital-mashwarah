@@ -13,7 +13,7 @@ import WebDesign from "@/pages/services/WebDesign";
 import ContentMarketing from "@/pages/services/ContentMarketing";
 import EmailMarketing from "@/pages/services/EmailMarketing";
 import VideoProduction from "@/pages/services/VideoProduction";
-import Branding from "@/pages/services/Branding";
+import BrandingDesign from "@/pages/services/BrandingDesign";
 import InfluencerMarketing from "@/pages/services/InfluencerMarketing";
 import Analytics from "@/pages/services/Analytics";
 import { useEffect } from "react";
@@ -38,7 +38,7 @@ function Router() {
       <Route path="/services/content-marketing" component={ContentMarketing} />
       <Route path="/services/email-marketing" component={EmailMarketing} />
       <Route path="/services/video-production" component={VideoProduction} />
-      <Route path="/services/branding" component={Branding} />
+      <Route path="/services/branding" component={BrandingDesign} />
       <Route path="/services/influencer-marketing" component={InfluencerMarketing} />
       <Route path="/services/analytics" component={Analytics} />
       <Route component={NotFound} />

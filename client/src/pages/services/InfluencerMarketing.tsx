@@ -1,141 +1,92 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Star, Users, TrendingUp, Heart, CheckCircle, Target, DollarSign, Camera } from "lucide-react";
-import BackButton from "@/components/BackToHomeButton";
+import BackToHomeButton from "@/components/BackToHomeButton";
+import { CheckCircle, Users, Heart, TrendingUp, UserCheck } from "lucide-react";
 
 export default function InfluencerMarketing() {
   return (
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-[hsl(218,65%,32%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <BackButton />
+      <section className="py-20 bg-gradient-to-br from-rose-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BackToHomeButton />
+          
           <div className="text-center mb-16">
-            <div className="w-20 h-20 bg-white/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-              <Star className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-5xl font-bold text-white mb-6">Influencer Marketing</h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Connect with your target audience through authentic influencer partnerships and collaborations that drive real results.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Influencer Marketing
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Leverage the power of authentic influencer partnerships to expand your reach and build trust
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">Our Influencer Services</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Influencer Discovery</h3>
-                      <p className="text-white/80 text-sm">Find the perfect influencers for your brand and niche</p>
-                    </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Authentic Influence, Real Results
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Our influencer marketing strategies connect your brand with the right creators to build authentic relationships and drive meaningful engagement.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Influencer Discovery & Outreach",
+                  "Campaign Strategy Development",
+                  "Content Collaboration",
+                  "Performance Tracking & Analytics",
+                  "Brand Partnership Management"
+                ].map((service, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-gray-700">{service}</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Campaign Strategy</h3>
-                      <p className="text-white/80 text-sm">Develop comprehensive influencer marketing strategies</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Partnership Management</h3>
-                      <p className="text-white/80 text-sm">Handle negotiations, contracts, and relationship management</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Content Collaboration</h3>
-                      <p className="text-white/80 text-sm">Work with influencers to create authentic, engaging content</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Campaign Tracking</h3>
-                      <p className="text-white/80 text-sm">Monitor performance and measure ROI</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">Influencer Marketing Benefits</h2>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <Heart className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Authenticity</h3>
-                    <p className="text-white/80 text-xs">Genuine endorsements</p>
-                  </div>
-                  <div className="text-center">
-                    <Users className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Reach</h3>
-                    <p className="text-white/80 text-xs">Massive audience</p>
-                  </div>
-                  <div className="text-center">
-                    <Target className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Targeted</h3>
-                    <p className="text-white/80 text-xs">Specific demographics</p>
-                  </div>
-                  <div className="text-center">
-                    <DollarSign className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Cost-Effective</h3>
-                    <p className="text-white/80 text-xs">Better ROI</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-16">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Types of Influencers We Work With</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Star className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Mega Influencers</h3>
-                <p className="text-white/80 text-sm">1M+ followers</p>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Users className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Macro Influencers</h3>
-                <p className="text-white/80 text-sm">100K-1M followers</p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Users className="h-10 w-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Audience Reach</h3>
+                <p className="text-gray-600">Access to engaged audiences through trusted influencers</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Camera className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Micro Influencers</h3>
-                <p className="text-white/80 text-sm">10K-100K followers</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Heart className="h-10 w-10 text-red-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Authentic Content</h3>
+                <p className="text-gray-600">Genuine recommendations that build trust and credibility</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Heart className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Nano Influencers</h3>
-                <p className="text-white/80 text-sm">1K-10K followers</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <TrendingUp className="h-10 w-10 text-green-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Brand Awareness</h3>
+                <p className="text-gray-600">Expand your reach and increase brand visibility</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <UserCheck className="h-10 w-10 text-purple-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Targeted Matching</h3>
+                <p className="text-gray-600">Perfect influencer matches for your brand and audience</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Partner with Influencers?</h2>
-            <p className="text-white/90 text-lg mb-8">Let's connect your brand with the right influencers to amplify your message and reach new audiences.</p>
-            <Button className="bg-[hsl(213,90%,69%)] hover:bg-[hsl(213,90%,60%)] text-white px-8 py-4 rounded-full text-lg font-semibold">
-              Find Influencers
-            </Button>
+          <div className="text-center mt-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Ready to Partner with Influencers?
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+              Let's connect your brand with the right influencers to drive authentic engagement and growth
+            </p>
+            <a
+              href="https://wa.me/923104090921"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-rose-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-rose-700 transition-colors"
+            >
+              Start Your Influencer Campaign
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

@@ -1,141 +1,130 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Search, TrendingUp, Globe, FileText, Link, BarChart3, Target, Clock, CheckCircle } from "lucide-react";
-import BackButton from "@/components/BackToHomeButton";
+import BackToHomeButton from "@/components/BackToHomeButton";
+import { CheckCircle, Search, TrendingUp, Target, BarChart3 } from "lucide-react";
 
 export default function SEO() {
   return (
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-[hsl(218,65%,32%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <BackButton />
+      <section className="py-20 bg-gradient-to-br from-green-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BackToHomeButton />
+          
           <div className="text-center mb-16">
-            <div className="w-20 h-20 bg-white/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-              <Search className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-5xl font-bold text-white mb-6">Search Engine Optimization</h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Improve your website's visibility and rankings on search engines to drive organic traffic and grow your business.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              SEO & Search Marketing
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Dominate search results and drive organic traffic with our comprehensive SEO strategies
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">Our SEO Services</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Keyword Research & Strategy</h3>
-                      <p className="text-white/80 text-sm">In-depth analysis to identify high-value keywords for your business</p>
-                    </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Rank Higher, Get Found More
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Our SEO experts use proven strategies to improve your search rankings, increase organic traffic, and boost your online visibility across all major search engines.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Keyword Research & Strategy",
+                  "On-Page Optimization",
+                  "Technical SEO Audit",
+                  "Link Building & Outreach",
+                  "Local SEO & Maps Optimization"
+                ].map((service, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <span className="text-gray-700">{service}</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">On-Page Optimization</h3>
-                      <p className="text-white/80 text-sm">Optimize your website structure, content, and technical elements</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Technical SEO</h3>
-                      <p className="text-white/80 text-sm">Fix crawling issues, improve site speed, and enhance user experience</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Link Building</h3>
-                      <p className="text-white/80 text-sm">Build high-quality backlinks to increase domain authority</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[hsl(213,90%,69%)] flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-white">Content Optimization</h3>
-                      <p className="text-white/80 text-sm">Create and optimize content that ranks and converts</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">SEO Benefits</h2>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <TrendingUp className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Increased Traffic</h3>
-                    <p className="text-white/80 text-xs">More organic visitors</p>
-                  </div>
-                  <div className="text-center">
-                    <Globe className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Better Visibility</h3>
-                    <p className="text-white/80 text-xs">Higher search rankings</p>
-                  </div>
-                  <div className="text-center">
-                    <Target className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">Quality Leads</h3>
-                    <p className="text-white/80 text-xs">Targeted traffic</p>
-                  </div>
-                  <div className="text-center">
-                    <BarChart3 className="w-8 h-8 text-[hsl(213,90%,69%)] mx-auto mb-2" />
-                    <h3 className="font-semibold text-white text-sm">ROI Growth</h3>
-                    <p className="text-white/80 text-xs">Long-term results</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-16">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Our SEO Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-[hsl(213,90%,69%)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Search className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">1. Audit</h3>
-                <p className="text-white/80 text-sm">Comprehensive website analysis</p>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-[hsl(213,90%,69%)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">2. Strategy</h3>
-                <p className="text-white/80 text-sm">Custom SEO strategy development</p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Search className="h-10 w-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Keyword Research</h3>
+                <p className="text-gray-600">Target the right keywords to attract your ideal customers</p>
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-[hsl(213,90%,69%)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FileText className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">3. Implementation</h3>
-                <p className="text-white/80 text-sm">Execute optimization plan</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <TrendingUp className="h-10 w-10 text-green-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Organic Growth</h3>
+                <p className="text-gray-600">Sustainable traffic growth through white-hat SEO techniques</p>
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-[hsl(213,90%,69%)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BarChart3 className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">4. Monitor</h3>
-                <p className="text-white/80 text-sm">Track and report progress</p>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <Target className="h-10 w-10 text-purple-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Local SEO</h3>
+                <p className="text-gray-600">Dominate local search results and Google Maps listings</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <BarChart3 className="h-10 w-10 text-orange-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Analytics</h3>
+                <p className="text-gray-600">Track rankings, traffic, and conversion improvements</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Dominate Search Results?</h2>
-            <p className="text-white/90 text-lg mb-8">Let's improve your search rankings and drive more organic traffic to your website.</p>
-            <Button className="bg-[hsl(213,90%,69%)] hover:bg-[hsl(213,90%,60%)] text-white px-8 py-4 rounded-full text-lg font-semibold">
-              Get SEO Audit
-            </Button>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              Our SEO Process
+            </h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              {[
+                {
+                  step: "01",
+                  title: "SEO Audit",
+                  description: "Comprehensive analysis of your current SEO performance and opportunities"
+                },
+                {
+                  step: "02",
+                  title: "Strategy Development",
+                  description: "Create a customized SEO roadmap based on your goals and competition"
+                },
+                {
+                  step: "03",
+                  title: "Implementation",
+                  description: "Execute on-page, technical, and off-page optimization strategies"
+                },
+                {
+                  step: "04",
+                  title: "Monitoring & Reporting",
+                  description: "Track progress and adjust strategies for continuous improvement"
+                }
+              ].map((process, index) => (
+                <div key={index} className="text-center">
+                  <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-green-600">{process.step}</span>
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{process.title}</h3>
+                  <p className="text-gray-600">{process.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Ready to Dominate Search Results?
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+              Let's boost your search rankings and drive more qualified traffic to your website
+            </p>
+            <a
+              href="https://wa.me/923104090921"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              Start Your SEO Journey
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
