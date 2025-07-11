@@ -36,7 +36,7 @@ export default function Portfolio() {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       roi: "+320%",
       duration: "3 months",
-      client: "InnovateTech Solutions",
+      client: "Digital University",
       challenge: "New startup with no brand recognition or digital presence entering competitive tech market.",
       solution: "Developed complete brand identity, built responsive website, and executed multi-channel launch campaign.",
       tools: ["Brand Design", "Web Development", "LinkedIn Ads", "Content Marketing", "PR"],
