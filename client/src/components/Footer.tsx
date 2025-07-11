@@ -84,11 +84,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Social Media Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">SEO</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Google Ads</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Content Marketing</a></li>
+              <li><a href="/services/social-media-marketing" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Social Media Marketing</a></li>
+              <li><a href="/services/seo" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">SEO</a></li>
+              <li><a href="/services/google-ads" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Google Ads</a></li>
+              <li><a href="/services/web-design" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Web Development</a></li>
+              <li><a href="/services/content-marketing" className="text-gray-400 hover:text-[hsl(213,90%,69%)] transition-colors">Content Marketing</a></li>
             </ul>
           </div>
           
