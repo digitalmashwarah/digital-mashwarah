@@ -5,7 +5,7 @@ import { CheckCircle, MousePointer, Target, TrendingUp, DollarSign } from "lucid
 export default function GoogleAds() {
   return (
     <Layout>
-      <section className="py-20 bg-gradient-to-br from-red-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <BackToHomeButton />
           
@@ -97,8 +97,8 @@ export default function GoogleAds() {
                 }
               ].map((process, index) => (
                 <div key={index} className="text-center">
-                  <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-red-600">{process.step}</span>
+                  <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-blue-600">{process.step}</span>
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{process.title}</h3>
                   <p className="text-gray-600">{process.description}</p>
@@ -118,7 +118,7 @@ export default function GoogleAds() {
               href="https://wa.me/923104090921"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Start Your Google Ads Campaign
             </a>

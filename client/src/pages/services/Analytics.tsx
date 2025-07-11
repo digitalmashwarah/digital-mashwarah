@@ -5,7 +5,7 @@ import { CheckCircle, BarChart3, TrendingUp, Target, PieChart } from "lucide-rea
 export default function Analytics() {
   return (
     <Layout>
-      <section className="py-20 bg-gradient-to-br from-cyan-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <BackToHomeButton />
           
@@ -80,7 +80,7 @@ export default function Analytics() {
               href="https://wa.me/923104090921"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Start Your Analytics Journey
             </a>
