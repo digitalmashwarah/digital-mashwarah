@@ -18,6 +18,14 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Check if we're on a service page or other pages with light backgrounds
+  const isOnLightBackground = window.location.pathname.startsWith('/services') || 
+                              window.location.pathname.startsWith('/about') || 
+                              window.location.pathname === '/';
+
+  // Always use dark text on light background pages, or when scrolled
+  const shouldUseDarkText = isScrolled || isOnLightBackground;
+
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -63,7 +71,7 @@ export default function Header() {
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'sticky-nav' : 'bg-white/10 backdrop-blur-sm'
+      shouldUseDarkText ? 'sticky-nav' : 'bg-white/10 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -74,7 +82,7 @@ export default function Header() {
               className="block"
             >
               <h1 className={`text-2xl font-black transition-all duration-300 cursor-pointer max-h-[50px] leading-tight ${
-                isScrolled 
+                shouldUseDarkText 
                   ? 'text-[hsl(218,75%,25%)] hover:text-[hsl(213,84%,55%)]' 
                   : 'text-white hover:text-gray-200'
               }`}>
@@ -95,7 +103,7 @@ export default function Header() {
                     <button
                       onClick={() => handleNavClick(item.href)}
                       className={`flex items-center space-x-1 ${
-                        isScrolled ? 'text-gray-700 hover:text-[hsl(218,65%,32%)]' : 'text-white hover:text-[hsl(213,90%,69%)]'
+                        shouldUseDarkText ? 'text-gray-700 hover:text-[hsl(218,65%,32%)]' : 'text-white hover:text-[hsl(213,90%,69%)]'
                       } transition-colors`}
                     >
                       <span>{item.label}</span>
@@ -123,7 +131,7 @@ export default function Header() {
                   <button
                     onClick={() => handleNavClick(item.href)}
                     className={`${
-                      isScrolled ? 'text-gray-700 hover:text-[hsl(218,65%,32%)]' : 'text-white hover:text-[hsl(213,90%,69%)]'
+                      shouldUseDarkText ? 'text-gray-700 hover:text-[hsl(218,65%,32%)]' : 'text-white hover:text-[hsl(213,90%,69%)]'
                     } transition-colors`}
                   >
                     {item.label}
@@ -147,7 +155,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={isScrolled ? 'text-gray-700' : 'text-white'}
+              className={shouldUseDarkText ? 'text-gray-700' : 'text-white'}
             >
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
