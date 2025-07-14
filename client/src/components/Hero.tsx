@@ -53,9 +53,15 @@ export default function Hero() {
               We help businesses achieve remarkable growth through innovative strategies 
               and cutting-edge technology.
             </p>
-            <Button className="digital-accent px-8 py-4 rounded-full text-lg font-semibold mb-8">
-              Get Free Consultation
-            </Button>
+            <a 
+              href="https://wa.me/923104090921" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="digital-accent px-8 py-4 rounded-full text-lg font-semibold mb-8">
+                Get Free Consultation
+              </Button>
+            </a>
             
 
           </div>

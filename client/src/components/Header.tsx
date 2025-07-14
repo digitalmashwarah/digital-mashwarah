@@ -131,9 +131,15 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <Button className="digital-primary rounded-full px-6 py-2">
-              Get Free Consultation
-            </Button>
+            <a 
+              href="https://wa.me/923104090921" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="digital-primary rounded-full px-6 py-2">
+                Get Free Consultation
+              </Button>
+            </a>
           </div>
           
           <div className="md:hidden">
@@ -190,9 +196,16 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <Button className="w-full digital-primary rounded-full py-2 mt-4">
-              Get Free Consultation
-            </Button>
+            <a 
+              href="https://wa.me/923104090921" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Button className="w-full digital-primary rounded-full py-2 mt-4">
+                Get Free Consultation
+              </Button>
+            </a>
           </div>
         </div>
       )}
