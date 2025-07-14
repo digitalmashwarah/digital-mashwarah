@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Facebook, Twitter, Linkedin, Instagram, Send } from "lucide-react";
+import { Facebook, Youtube, Linkedin, Instagram, Send } from "lucide-react";
 import logoPath from "@assets/Digitalmashwarah logo_1751971220696.jpg";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
@@ -60,9 +60,11 @@ export default function Footer() {
                   <Facebook className="h-4 w-4" />
                 </Button>
               </a>
-              <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
-                <Twitter className="h-4 w-4" />
-              </Button>
+              <a href="https://www.youtube.com/@digitalmashwarah1856" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
+                  <Youtube className="h-4 w-4" />
+                </Button>
+              </a>
               <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
                 <Linkedin className="h-4 w-4" />
               </Button>
