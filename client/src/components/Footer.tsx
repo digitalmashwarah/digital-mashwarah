@@ -60,6 +60,11 @@ export default function Footer() {
                   <Facebook className="h-4 w-4" />
                 </Button>
               </a>
+              <a href="https://www.instagram.com/digitalmashwarah/" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
+                  <Instagram className="h-4 w-4" />
+                </Button>
+              </a>
               <a href="https://www.youtube.com/@digitalmashwarah1856" target="_blank" rel="noopener noreferrer">
                 <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
                   <Youtube className="h-4 w-4" />
@@ -68,11 +73,6 @@ export default function Footer() {
               <a href="https://www.google.com/maps/contrib/103277732386033719492/photos/@31.4647864,74.3118231,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                 <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
                   <MapPin className="h-4 w-4" />
-                </Button>
-              </a>
-              <a href="https://www.instagram.com/digitalmashwarah/" target="_blank" rel="noopener noreferrer">
-                <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
-                  <Instagram className="h-4 w-4" />
                 </Button>
               </a>
             </div>
