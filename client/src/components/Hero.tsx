@@ -132,48 +132,33 @@ export default function Hero() {
             <div className="mt-8 text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-t border-white/10">
               <p className="text-white/60 text-sm mb-3 sm:mb-4">Trusted by leading brands</p>
               
-              {/* Mobile: Scrolling ticker */}
-              <div className="sm:hidden overflow-hidden">
+              {/* Scrolling ticker for both mobile and desktop */}
+              <div className="overflow-hidden">
                 <div className="animate-scroll-horizontal flex whitespace-nowrap space-x-8 min-w-max">
-                  <span className="text-white/80 text-sm font-semibold">Jannat Jewellers</span>
-                  <span className="text-white/80 text-sm font-semibold">Ghani Jewellers</span>
-                  <span className="text-white/80 text-sm font-semibold">Kingg Music</span>
-                  <span className="text-white/80 text-sm font-semibold">Umeed Milap</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital Markaz</span>
-                  <span className="text-white/80 text-sm font-semibold">Miracle Mobiles</span>
-                  <span className="text-white/80 text-sm font-semibold">Style Studio</span>
-                  <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
-                  <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
-                  <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Jannat Jewellers</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Ghani Jewellers</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Kingg Music</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Umeed Milap</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Digital Markaz</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Miracle Mobiles</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Style Studio</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Rishta Markaz</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Lilium Vogue</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Dream Talent</span>
                   {/* Duplicate for seamless loop */}
-                  <span className="text-white/80 text-sm font-semibold">Jannat Jewellers</span>
-                  <span className="text-white/80 text-sm font-semibold">Ghani Jewellers</span>
-                  <span className="text-white/80 text-sm font-semibold">Kingg Music</span>
-                  <span className="text-white/80 text-sm font-semibold">Umeed Milap</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital Markaz</span>
-                  <span className="text-white/80 text-sm font-semibold">Miracle Mobiles</span>
-                  <span className="text-white/80 text-sm font-semibold">Style Studio</span>
-                  <span className="text-white/80 text-sm font-semibold">Rishta Markaz</span>
-                  <span className="text-white/80 text-sm font-semibold">Lilium Vogue</span>
-                  <span className="text-white/80 text-sm font-semibold">Digital University</span>
-                  <span className="text-white/80 text-sm font-semibold">Dream Talent</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Jannat Jewellers</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Ghani Jewellers</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Kingg Music</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Umeed Milap</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Digital Markaz</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Miracle Mobiles</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Style Studio</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Rishta Markaz</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Lilium Vogue</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Digital University</span>
+                  <span className="text-white/80 text-sm sm:text-base font-semibold">Dream Talent</span>
                 </div>
-              </div>
-
-              {/* Desktop: Grid layout */}
-              <div className="hidden sm:flex sm:items-center sm:justify-center sm:flex-wrap gap-4 md:gap-6 opacity-70">
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Jannat Jewellers</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Ghani Jewellers</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Kingg Music</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Umeed Milap</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Digital Markaz</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Miracle Mobiles</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Style Studio</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Rishta Markaz</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Lilium Vogue</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Digital University</div>
-                <div className="text-white/80 text-base md:text-lg font-semibold hover:scale-105 hover:opacity-80 transition-all duration-300 cursor-pointer">Dream Talent</div>
               </div>
             </div>
           </div>
