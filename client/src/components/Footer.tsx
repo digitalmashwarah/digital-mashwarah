@@ -55,9 +55,11 @@ export default function Footer() {
               Empowering businesses with innovative digital marketing solutions.
             </p>
             <div className="flex space-x-4">
-              <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
-                <Facebook className="h-4 w-4" />
-              </Button>
+              <a href="https://www.facebook.com/digitalmashwarah/" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
+                  <Facebook className="h-4 w-4" />
+                </Button>
+              </a>
               <Button size="icon" variant="ghost" className="text-gray-400 hover:text-[hsl(213,90%,69%)]">
                 <Twitter className="h-4 w-4" />
               </Button>
