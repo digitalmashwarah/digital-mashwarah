@@ -96,15 +96,13 @@ export default function About() {
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-gradient-to-br from-[hsl(218,75%,25%)] to-[hsl(213,84%,55%)] rounded-2xl p-8 text-white">
-                  <div className="text-center">
-                    <Rocket className="h-16 w-16 mx-auto mb-4 text-[hsl(213,90%,69%)]" />
-                    <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                    <p className="text-lg opacity-90">
-                      To empower businesses with innovative digital marketing solutions that create lasting impact, 
-                      drive meaningful growth, and build stronger connections with their audiences.
-                    </p>
-                  </div>
+                <div className="bg-gradient-to-br from-[hsl(218,75%,25%)] to-[hsl(213,84%,55%)] rounded-2xl p-8 text-white text-center">
+                  <Rocket className="h-16 w-16 mx-auto mb-4 text-[hsl(213,90%,69%)]" />
+                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                  <p className="text-lg opacity-90 leading-relaxed max-w-md mx-auto">
+                    To empower businesses with innovative digital marketing solutions that create lasting impact, 
+                    drive meaningful growth, and build stronger connections with their audiences.
+                  </p>
                 </div>
               </div>
             </div>
