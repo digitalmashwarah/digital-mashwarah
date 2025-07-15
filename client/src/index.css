@@ -217,6 +217,60 @@
     animation: serviceSlideIn 0.8s ease-out 1.2s both;
   }
 
+  /* Enhanced Service Card Animations */
+  .service-card {
+    @apply transition-all duration-500 ease-out transform-gpu;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  .service-card:hover {
+    @apply transform -translate-y-2 scale-[1.02];
+    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+  }
+
+  .service-card::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg opacity-0 transition-opacity duration-500;
+    background: linear-gradient(45deg, 
+      rgba(59, 130, 246, 0.1), 
+      rgba(147, 197, 253, 0.1), 
+      rgba(59, 130, 246, 0.1)
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .service-card:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Icon pulse animation */
+  .service-icon {
+    @apply transition-all duration-300 ease-out;
+    animation: icon-float 3s ease-in-out infinite;
+  }
+
+  .service-icon:hover {
+    animation: icon-bounce 0.6s ease-in-out;
+  }
+
+  /* Shimmer effect for cards */
+  .shimmer-effect {
+    @apply absolute inset-0 -translate-x-full;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transition: transform 0.8s ease-out;
+  }
+
+  .service-card:hover .shimmer-effect {
+    @apply translate-x-full;
+  }
+
   .analytics-animation {
     width: 100%;
     height: 100%;
@@ -292,6 +346,33 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes icon-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes icon-bounce {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
   }
 }
 
