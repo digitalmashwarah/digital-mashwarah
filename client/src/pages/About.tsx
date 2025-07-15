@@ -62,10 +62,10 @@ export default function About() {
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-center">
                 About <span className="text-[hsl(213,90%,69%)]">Digital Mashwarah</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed text-center">
                 Your trusted partner in digital transformation, creating meaningful connections between brands and audiences through innovative marketing solutions.
               </p>
             </div>
