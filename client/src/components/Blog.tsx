@@ -87,7 +87,7 @@ export default function Blog() {
   ];
 
   return (
-    <section id="blog" className="py-12 md:py-20 digital-light-bg">
+    <section id="blog" className="py-12 md:py-20 bg-blue-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl font-bold gradient-text mb-4">Latest Blog Posts</h2>

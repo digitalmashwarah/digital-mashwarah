@@ -29,7 +29,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-12 md:py-20 digital-light-bg team-spacing">
+    <section id="about" className="py-12 md:py-20 bg-white team-spacing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl font-bold gradient-text mb-4">About Digital Mashwarah</h2>
