@@ -58,11 +58,11 @@ export default function About() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-[hsl(218,75%,25%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)] text-white relative overflow-hidden">
+        <section className="py-32 bg-gradient-to-br from-[hsl(218,75%,25%)] via-[hsl(213,84%,55%)] to-[hsl(218,65%,32%)] text-white relative overflow-hidden min-h-[60vh] flex items-center">
           <div className="absolute inset-0 bg-black/10"></div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-center">
                 About <span className="text-[hsl(213,90%,69%)]">Digital Mashwarah</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed text-center">
