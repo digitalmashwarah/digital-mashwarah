@@ -86,23 +86,9 @@ export default function About() {
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Who We <span className="text-[hsl(213,90%,69%)]">Are</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                Digital Mashwarah is a premier digital marketing agency based in Lahore, Pakistan, dedicated to helping businesses thrive in the digital age through innovative strategies and exceptional results.
+              <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed max-w-4xl mx-auto">
+                We are a premier digital marketing agency dedicated to helping businesses thrive in the digital age through innovative strategies and exceptional results.
               </p>
-              <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <div className="flex items-center bg-white/20 px-4 py-2 rounded-full">
-                  <MapPin className="h-4 w-4 mr-2" />
-                  Lahore, Pakistan
-                </div>
-                <div className="flex items-center bg-white/20 px-4 py-2 rounded-full">
-                  <Phone className="h-4 w-4 mr-2" />
-                  +92 310 4090921
-                </div>
-                <div className="flex items-center bg-white/20 px-4 py-2 rounded-full">
-                  <Mail className="h-4 w-4 mr-2" />
-                  Expert Team
-                </div>
-              </div>
             </div>
           </div>
         </section>
