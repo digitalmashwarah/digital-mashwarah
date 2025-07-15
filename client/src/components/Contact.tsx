@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Youtube, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -177,18 +177,26 @@ export default function Contact() {
             </div>
             
             <div className="flex space-x-4">
-              <Button size="icon" className="digital-primary">
-                <Facebook className="h-4 w-4" />
-              </Button>
-              <Button size="icon" className="digital-primary">
-                <Twitter className="h-4 w-4" />
-              </Button>
-              <Button size="icon" className="digital-primary">
-                <Linkedin className="h-4 w-4" />
-              </Button>
-              <Button size="icon" className="digital-primary">
-                <Instagram className="h-4 w-4" />
-              </Button>
+              <a href="https://www.facebook.com/digitalmashwarah/" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" className="digital-primary">
+                  <Facebook className="h-4 w-4" />
+                </Button>
+              </a>
+              <a href="https://www.instagram.com/digitalmashwarah/" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" className="digital-primary">
+                  <Instagram className="h-4 w-4" />
+                </Button>
+              </a>
+              <a href="https://www.youtube.com/@digitalmashwarah1856" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" className="digital-primary">
+                  <Youtube className="h-4 w-4" />
+                </Button>
+              </a>
+              <a href="https://www.google.com/maps/contrib/103277732386033719492/photos/@31.4647864,74.3118231,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                <Button size="icon" className="digital-primary">
+                  <MapPin className="h-4 w-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
