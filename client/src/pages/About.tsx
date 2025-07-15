@@ -68,11 +68,6 @@ export default function About() {
               <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed">
                 Your trusted partner in digital transformation, creating meaningful connections between brands and audiences through innovative marketing solutions.
               </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <Badge variant="secondary" className="px-4 py-2 text-lg font-medium">Since 2018</Badge>
-                <Badge variant="secondary" className="px-4 py-2 text-lg font-medium">Lahore Based</Badge>
-                <Badge variant="secondary" className="px-4 py-2 text-lg font-medium">Full-Service Agency</Badge>
-              </div>
             </div>
           </div>
         </section>
