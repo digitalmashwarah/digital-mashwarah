@@ -135,6 +135,14 @@ Changelog:
   - Added About page to navigation (header and footer)
   - Includes company story, team members, values, mission, and statistics
   - Updated routing and navigation to support dedicated About page
+- July 15, 2025. About page redesign with modern storytelling layout:
+  - Redesigned hero section with bold heading, gradient background, and "Explore Our Journey" CTA
+  - Converted journey section into visual timeline format with 8 key milestones from 2018-2025
+  - Added dedicated Mission, Vision, and Core Values section with colorful icons
+  - Enhanced team section with circular profile images and LinkedIn links
+  - Implemented alternating light blue and white backgrounds for better visual flow
+  - Added smooth scroll animations and hover effects throughout
+  - Maintained mobile responsiveness across all sections
 
 ## User Preferences
 
