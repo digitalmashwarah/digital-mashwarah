@@ -295,22 +295,22 @@ export default function About() {
         <section className="py-20 bg-gradient-to-r from-[hsl(218,65%,32%)] to-[hsl(213,84%,55%)] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
-            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
               Let's discuss how Digital Mashwarah can help you achieve your digital marketing goals and drive meaningful business growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="https://wa.me/923104090921" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-white text-[hsl(218,65%,32%)] hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <Button size="lg" className="bg-white text-[hsl(218,65%,32%)] hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                   Start Your Journey
                 </Button>
               </a>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-[hsl(218,65%,32%)] px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-white text-white hover:bg-white hover:text-[hsl(218,65%,32%)] px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
                 onClick={() => window.location.href = '/#contact'}
               >
-                Get in Touch
+                Get Free Consultation
               </Button>
             </div>
           </div>
