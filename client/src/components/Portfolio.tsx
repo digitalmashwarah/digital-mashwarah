@@ -44,9 +44,7 @@ export default function Portfolio() {
     }
   ];
 
-  const clientLogos = [
-    "TechShop", "Flavor Town", "InnovateTech", "GrowthCorp", "StartupHub", "DigitalPro"
-  ];
+
 
   return (
     <section id="portfolio" className="py-12 md:py-20 digital-light-bg">
@@ -58,7 +56,7 @@ export default function Portfolio() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card 
               key={project.title} 
@@ -80,21 +78,6 @@ export default function Portfolio() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Client Logos */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-[hsl(218,65%,32%)] mb-8">Trusted by Leading Brands</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {clientLogos.map((logo, index) => (
-              <div 
-                key={index}
-                className="text-[hsl(218,65%,32%)] font-bold text-lg px-4 py-2 border border-[hsl(218,65%,32%)]/20 rounded-lg"
-              >
-                {logo}
-              </div>
-            ))}
-          </div>
         </div>
 
         <PortfolioModal 
