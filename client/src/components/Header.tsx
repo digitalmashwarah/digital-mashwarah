@@ -112,17 +112,19 @@ export default function Header() {
                     
                     {/* Services Dropdown */}
                     {isServicesDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border z-50">
-                        <div className="py-2">
-                          {serviceItems.map((service) => (
-                            <a
-                              key={service.href}
-                              href={service.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[hsl(218,65%,32%)] transition-colors"
-                            >
-                              {service.label}
-                            </a>
-                          ))}
+                      <div className="absolute top-full left-0 pt-2 w-64 z-50">
+                        <div className="bg-white rounded-lg shadow-xl border">
+                          <div className="py-2">
+                            {serviceItems.map((service) => (
+                              <a
+                                key={service.href}
+                                href={service.href}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[hsl(218,65%,32%)] transition-colors"
+                              >
+                                {service.label}
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     )}
