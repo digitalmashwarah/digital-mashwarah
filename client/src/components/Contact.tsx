@@ -140,8 +140,8 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-[hsl(218,65%,32%)] mb-2">Office Address</h3>
                 <p className="text-gray-600">
-                  123 Business Street<br />
-                  Marketing District, City 12345
+                  Shagufta Heights, 302,<br />
+                  College Road, Lahore
                 </p>
               </div>
             </div>
