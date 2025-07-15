@@ -306,8 +306,7 @@ export default function About() {
               </a>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-[hsl(218,65%,32%)] px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[hsl(218,65%,32%)] px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
                 onClick={() => window.location.href = '/#contact'}
               >
                 Get Free Consultation
