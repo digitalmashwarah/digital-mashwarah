@@ -6,6 +6,7 @@ import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle
 import yasirAslamImage from "@assets/Ahmad_Khan_Profile_192x192_1753350694780.jpg";
 import aftabHussainImage from "@assets/Yasir_Aslam_Profile_192x192_1753349195273.jpg";
 import syedAwaisImage from "@assets/Aftab_Hussain_Profile_192x192_1753349470894.jpg";
+import misbahKhalilImage from "@assets/Female_TeamMember_Profile_192x192_1753350973550.jpg";
 
 export default function About() {
   const timelineEvents = [
@@ -74,11 +75,11 @@ export default function About() {
       linkedin: "https://linkedin.com/in/syedawais"
     },
     {
-      name: "Ahmad Khan",
-      role: "Technical Lead",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      bio: "Full-stack developer specializing in web applications and marketing automation.",
-      linkedin: "https://linkedin.com/in/ahmadkhan"
+      name: "Misbah Khalil",
+      role: "Brand Communication Manager",
+      image: misbahKhalilImage,
+      bio: "Expert in brand storytelling and integrated communication strategies that build authentic connections between brands and their audiences.",
+      linkedin: "https://linkedin.com/in/misbahkhalil"
     }
   ];
 
