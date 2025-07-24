@@ -78,7 +78,7 @@ export default function About() {
       name: "Misbah Khalil",
       role: "Brand Communication Manager",
       image: misbahKhalilImage,
-      bio: "Expert in brand storytelling and integrated communication strategies that build authentic connections between brands and their audiences.",
+      bio: "Brand strategist focused on creating compelling narratives and communication strategies.",
       linkedin: "https://linkedin.com/in/misbahkhalil"
     }
   ];
