@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle, Eye, Heart, Calendar, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle, Eye, Heart, Calendar } from "lucide-react";
 import yasirAslamImage from "@assets/Ahmad_Khan_Profile_192x192_1753350694780.jpg";
 import aftabHussainImage from "@assets/Yasir_Aslam_Profile_192x192_1753349195273.jpg";
 import syedAwaisImage from "@assets/Aftab_Hussain_Profile_192x192_1753349470894.jpg";
@@ -57,29 +57,25 @@ export default function About() {
       name: "Yasir Aslam",
       role: "CEO & Founder",
       image: yasirAslamImage,
-      bio: "Visionary leader with 8+ years of experience in digital marketing and business strategy.",
-      linkedin: "https://linkedin.com/in/yasiraslam"
+      bio: "Visionary leader with 8+ years of experience in digital marketing and business strategy."
     },
     {
       name: "Aftab Hussain",
       role: "Creative Director",
       image: aftabHussainImage,
-      bio: "Award-winning designer specializing in brand identity and creative campaigns.",
-      linkedin: "https://linkedin.com/in/aftabhussain"
+      bio: "Award-winning designer specializing in brand identity and creative campaigns."
     },
     {
       name: "Syed Awais",
       role: "Head of Strategy",
       image: syedAwaisImage,
-      bio: "Strategic marketing expert with expertise in data-driven campaign optimization.",
-      linkedin: "https://linkedin.com/in/syedawais"
+      bio: "Strategic marketing expert with expertise in data-driven campaign optimization."
     },
     {
       name: "Misbah Khalil",
       role: "Brand Communication Manager",
       image: misbahKhalilImage,
-      bio: "Brand strategist focused on creating compelling narratives and communication strategies.",
-      linkedin: "https://linkedin.com/in/misbahkhalil"
+      bio: "Brand strategist focused on creating compelling narratives and communication strategies."
     }
   ];
 
@@ -276,16 +272,7 @@ export default function About() {
                     </div>
                     <h3 className="text-xl font-bold text-[hsl(218,65%,32%)] mb-2">{member.name}</h3>
                     <p className="text-[hsl(213,84%,55%)] font-semibold mb-3">{member.role}</p>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">{member.bio}</p>
-                    <a 
-                      href={member.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-[hsl(213,84%,55%)] hover:text-[hsl(218,65%,32%)] transition-colors duration-300"
-                    >
-                      <Linkedin className="w-5 h-5 mr-2" />
-                      Connect
-                    </a>
+                    <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                   </CardContent>
                 </Card>
               ))}
