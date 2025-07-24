@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle, Eye, Heart, Calendar, Linkedin } from "lucide-react";
-import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
+import yasirAslamImage from "@assets/Sarah_Ahmed_Profile_FIXED_192x192_1753350047624.jpg";
 import aftabHussainImage from "@assets/Yasir_Aslam_Profile_192x192_1753349195273.jpg";
 import syedAwaisImage from "@assets/Aftab_Hussain_Profile_192x192_1753349470894.jpg";
 
