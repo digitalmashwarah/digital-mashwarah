@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle, Eye, Heart, Calendar, Linkedin } from "lucide-react";
 import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
-import aftabHussainImage from "@assets/ChatGPT Image Jul 10, 2025, 04_49_45 PM_1752148197976.png";
+import aftabHussainImage from "@assets/Yasir_Aslam_Profile_192x192_1753349195273.jpg";
 
 export default function About() {
   const timelineEvents = [
