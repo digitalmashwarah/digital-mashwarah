@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Users2, Zap, Target, Star, ArrowRight, CheckCircle, Eye, Heart, Calendar, Linkedin } from "lucide-react";
 import yasirAslamImage from "@assets/Screenshot_20250710_162439_Gallery_1752146873606.jpg";
 import aftabHussainImage from "@assets/Yasir_Aslam_Profile_192x192_1753349195273.jpg";
+import syedAwaisImage from "@assets/Aftab_Hussain_Profile_192x192_1753349470894.jpg";
 
 export default function About() {
   const timelineEvents = [
@@ -66,11 +67,11 @@ export default function About() {
       linkedin: "https://linkedin.com/in/aftabhussain"
     },
     {
-      name: "Sarah Ahmed",
+      name: "Syed Awais",
       role: "Head of Strategy",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: syedAwaisImage,
       bio: "Strategic marketing expert with expertise in data-driven campaign optimization.",
-      linkedin: "https://linkedin.com/in/sarahahmed"
+      linkedin: "https://linkedin.com/in/syedawais"
     },
     {
       name: "Ahmad Khan",
